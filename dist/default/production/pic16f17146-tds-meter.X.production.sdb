@@ -1,0 +1,1590 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F17146 ]
+[d frameptr 6 ]
+"107 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\mcc_generated_files/adcc/src/adcc.c
+[e E8603 . `uc
+channel_ADCG1 3
+channel_OPA1OUT 57
+channel_VSS 58
+channel_Temp 59
+channel_DAC1OUT 60
+channel_DAC2OUT 61
+channel_FVR_Buffer1 62
+channel_FVR_Buffer2 63
+channel_ANC5 21
+]
+"85 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\mcc_generated_files/opa/src/opa1.c
+[e E8611 . `uc
+OPA1_posChannel_Vss 0
+OPA1_posChannel_GSEL 1
+OPA1_posChannel_OPA1IN 2
+OPA1_posChannel_Vdd_by_2 3
+OPA1_posChannel_DAC1 4
+OPA1_posChannel_DAC2 5
+]
+"90
+[e E8619 . `uc
+OPA1_RB5_IN0_pos 0
+OPA1_RC3_IN1_pos 1
+OPA1_RA2_IN2_pos 2
+OPA1_RA0_IN3_pos 3
+]
+"95
+[e E8625 . `uc
+OPA1_negChannel_No_Connection 0
+OPA1_negChannel_GSEL 1
+OPA1_negChannel_OPA1IN 2
+OPA1_negChannel_DAC1 4
+OPA1_negChannel_DAC2 5
+]
+"100
+[e E8632 . `uc
+OPA1_RB4_IN0_neg 0
+OPA1_RC3_IN1_neg 1
+OPA1_RA2_IN2_neg 2
+OPA1_RA0_IN3_neg 3
+OPA1_Vss 7
+]
+"105
+[e E8601 . `uc
+OPA1_R2byR1_is_0dp07 0
+OPA1_R2byR1_is_0dp14 1
+OPA1_R2byR1_is_0dp33 2
+OPA1_R2byR1_is_1 3
+OPA1_R2byR1_is_1dp67 4
+OPA1_R2byR1_is_3 5
+OPA1_R2byR1_is_7 6
+OPA1_R2byR1_is_15 7
+]
+"233 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\main.c
+[e E8606 . `uc
+channel_ADCG1 3
+channel_OPA1OUT 57
+channel_VSS 58
+channel_Temp 59
+channel_DAC1OUT 60
+channel_DAC2OUT 61
+channel_FVR_Buffer1 62
+channel_FVR_Buffer2 63
+channel_ANC5 21
+]
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"152 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+[v _pad pad `(v  1 s 1 pad ]
+"862
+[v _stoa stoa `(v  1 s 1 stoa ]
+"917
+[v _utoa utoa `(v  1 s 1 utoa ]
+"1048
+[v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
+"1546
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+"43 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"29 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\logf.c
+[v _logf logf `(f  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\printf.c
+[v _printf printf `(i  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"242
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"3 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\strncmp.c
+[v _strncmp strncmp `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"105 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\main.c
+[v _main main `(i  1 e 2 0 ]
+"171
+[v _GetCapturedTimePeriod GetCapturedTimePeriod `(ul  1 s 4 GetCapturedTimePeriod ]
+"197
+[v _CCP1_GetCapturedCount CCP1_GetCapturedCount `(us  1 s 2 CCP1_GetCapturedCount ]
+"202
+[v _TMR1_GetOverflowCount TMR1_GetOverflowCount `(uc  1 s 1 TMR1_GetOverflowCount ]
+"207
+[v _TMR1_ResetOverflowCount TMR1_ResetOverflowCount `(v  1 s 1 TMR1_ResetOverflowCount ]
+"212
+[v _CCP1_ResetCapturedCount CCP1_ResetCapturedCount `(v  1 s 1 CCP1_ResetCapturedCount ]
+"217
+[v _GetCapturedFrequency GetCapturedFrequency `(ul  1 s 4 GetCapturedFrequency ]
+"228
+[v _GetTdsProbeTemperature GetTdsProbeTemperature `(us  1 s 2 GetTdsProbeTemperature ]
+"246
+[v _GetWaterTDS GetWaterTDS `(us  1 s 2 GetWaterTDS ]
+"259
+[v _GetTempCompensatedConductivityValue GetTempCompensatedConductivityValue `(f  1 s 4 GetTempCompensatedConductivityValue ]
+"291
+[v _CCP1_UserCallBack CCP1_UserCallBack `(v  1 s 1 CCP1_UserCallBack ]
+"300
+[v _TMR1_UserOverflowCallback TMR1_UserOverflowCallback `(v  1 s 1 TMR1_UserOverflowCallback ]
+"305
+[v _TMR0_UserOverflowCallback TMR0_UserOverflowCallback `(v  1 s 1 TMR0_UserOverflowCallback ]
+"45 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\mcc_generated_files/adcc/src/adcc.c
+[v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
+"131
+[v _ADCC_GetSingleConversion ADCC_GetSingleConversion `(us  1 e 2 0 ]
+"52 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\mcc_generated_files/capture/src/ccp1.c
+[v _CCP1_DefaultCallBack CCP1_DefaultCallBack `(v  1 s 1 CCP1_DefaultCallBack ]
+"56
+[v _CCP1_Initialize CCP1_Initialize `(v  1 e 1 0 ]
+"85
+[v _CCP1_CaptureISR CCP1_CaptureISR `(v  1 e 1 0 ]
+"100
+[v _CCP1_SetCallBack CCP1_SetCallBack `(v  1 e 1 0 ]
+"44 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\mcc_generated_files/opa/src/opa1.c
+[v _OPA1_Initialize OPA1_Initialize `(v  1 e 1 0 ]
+"37 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\mcc_generated_files/system/src/clock.c
+[v _CLOCK_Initialize CLOCK_Initialize `(v  1 e 1 0 ]
+"40 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\mcc_generated_files/system/src/interrupt.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+"59
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+"104
+[v _INT_CallBack INT_CallBack `(v  1 e 1 0 ]
+"113
+[v _INT_SetInterruptHandler INT_SetInterruptHandler `(v  1 e 1 0 ]
+"117
+[v _INT_DefaultInterruptHandler INT_DefaultInterruptHandler `(v  1 e 1 0 ]
+"38 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\mcc_generated_files/system/src/pins.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"118
+[v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
+"36 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\mcc_generated_files/system/src/system.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"49 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\mcc_generated_files/timer/src/tmr0.c
+[v _Timer0_Initialize Timer0_Initialize `(v  1 e 1 0 ]
+"74
+[v _Timer0_Start Timer0_Start `(v  1 e 1 0 ]
+"79
+[v _Timer0_Stop Timer0_Stop `(v  1 e 1 0 ]
+"100
+[v _Timer0_Reload Timer0_Reload `(v  1 e 1 0 ]
+"106
+[v _Timer0_OverflowISR Timer0_OverflowISR `(v  1 e 1 0 ]
+"116
+[v _Timer0_OverflowCallbackRegister Timer0_OverflowCallbackRegister `(v  1 e 1 0 ]
+"121
+[v _Timer0_DefaultOverflowCallback Timer0_DefaultOverflowCallback `(v  1 s 1 Timer0_DefaultOverflowCallback ]
+"57 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\mcc_generated_files/timer/src/tmr1.c
+[v _Timer1_Initialize Timer1_Initialize `(v  1 e 1 0 ]
+"85
+[v _Timer1_Start Timer1_Start `(v  1 e 1 0 ]
+"91
+[v _Timer1_Stop Timer1_Stop `(v  1 e 1 0 ]
+"112
+[v _Timer1_Write Timer1_Write `(v  1 e 1 0 ]
+"139
+[v _Timer1_PeriodCountSet Timer1_PeriodCountSet `(v  1 e 1 0 ]
+"154
+[v _Timer1_OverflowISR Timer1_OverflowISR `(v  1 e 1 0 ]
+"167
+[v _Timer1_OverflowCallbackRegister Timer1_OverflowCallbackRegister `(v  1 e 1 0 ]
+"172
+[v _Timer1_DefaultOverflowCallback Timer1_DefaultOverflowCallback `(v  1 s 1 Timer1_DefaultOverflowCallback ]
+"106 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\mcc_generated_files/uart/src/eusart1.c
+[v _EUSART1_Initialize EUSART1_Initialize `(v  1 e 1 0 ]
+"135
+[v _EUSART1_Deinitialize EUSART1_Deinitialize `(v  1 e 1 0 ]
+"157
+[v _EUSART1_TransmitEnable EUSART1_TransmitEnable `T(v  1 e 1 0 ]
+"162
+[v _EUSART1_TransmitDisable EUSART1_TransmitDisable `T(v  1 e 1 0 ]
+"187
+[v _EUSART1_AutoBaudSet EUSART1_AutoBaudSet `T(v  1 e 1 0 ]
+"199
+[v _EUSART1_AutoBaudQuery EUSART1_AutoBaudQuery `T(a  1 e 1 0 ]
+"223
+[v _EUSART1_IsRxReady EUSART1_IsRxReady `(a  1 e 1 0 ]
+"228
+[v _EUSART1_IsTxReady EUSART1_IsTxReady `(a  1 e 1 0 ]
+"233
+[v _EUSART1_IsTxDone EUSART1_IsTxDone `(a  1 e 1 0 ]
+"238
+[v _EUSART1_ErrorGet EUSART1_ErrorGet `(ui  1 e 2 0 ]
+"244
+[v _EUSART1_Read EUSART1_Read `(uc  1 e 1 0 ]
+"267
+[v _EUSART1_ReceiveISR EUSART1_ReceiveISR `(v  1 e 1 0 ]
+"307
+[v _EUSART1_Write EUSART1_Write `(v  1 e 1 0 ]
+"318
+[v _putch putch `(v  1 e 1 0 ]
+"324
+[v _EUSART1_DefaultFramingErrorCallback EUSART1_DefaultFramingErrorCallback `(v  1 s 1 EUSART1_DefaultFramingErrorCallback ]
+"329
+[v _EUSART1_DefaultOverrunErrorCallback EUSART1_DefaultOverrunErrorCallback `(v  1 s 1 EUSART1_DefaultOverrunErrorCallback ]
+"336
+[v _EUSART1_FramingErrorCallbackRegister EUSART1_FramingErrorCallbackRegister `(v  1 e 1 0 ]
+"344
+[v _EUSART1_OverrunErrorCallbackRegister EUSART1_OverrunErrorCallbackRegister `(v  1 e 1 0 ]
+"352
+[v _EUSART1_RxCompleteCallbackRegister EUSART1_RxCompleteCallbackRegister `(v  1 e 1 0 ]
+"324 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X/mcc_generated_files/uart/eusart1.h
+[v _EUSART1_RxInterruptHandler EUSART1_RxInterruptHandler `*.37(v  1 e 2 0 ]
+[s S965 . 1 `uc 1 INTEDG 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"426 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\include\proc\pic16f17146.h
+[u S970 . 1 `S965 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES970  1 e 1 @11 ]
+"597
+[v _TRISA TRISA `VEuc  1 e 1 @18 ]
+"642
+[v _TRISB TRISB `VEuc  1 e 1 @19 ]
+"681
+[v _TRISC TRISC `VEuc  1 e 1 @20 ]
+"743
+[v _LATA LATA `VEuc  1 e 1 @24 ]
+"788
+[v _LATB LATB `VEuc  1 e 1 @25 ]
+"827
+[v _LATC LATC `VEuc  1 e 1 @26 ]
+[s S952 . 1 `uc 1 INTF 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 IOCIF 1 0 :1:4 
+`uc 1 TMR0IF 1 0 :1:5 
+]
+"902
+[u S957 . 1 `S952 1 . 1 0 ]
+[v _PIR0bits PIR0bits `VES957  1 e 1 @140 ]
+[s S1065 . 1 `uc 1 NVMIF 1 0 :1:0 
+`uc 1 CRCIF 1 0 :1:1 
+`uc 1 SCANIF 1 0 :1:2 
+`uc 1 ACTIF 1 0 :1:3 
+`uc 1 CSWIF 1 0 :1:4 
+`uc 1 OSFIF 1 0 :1:5 
+`uc 1 TMR1IF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"939
+[u S1074 . 1 `S1065 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES1074  1 e 1 @141 ]
+[s S459 . 1 `uc 1 TMR3IF 1 0 :1:0 
+`uc 1 TMR3GIF 1 0 :1:1 
+`uc 1 TMR2IF 1 0 :1:2 
+`uc 1 TMR4IF 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 CCP1IF 1 0 :1:5 
+`uc 1 CCP2IF 1 0 :1:6 
+]
+"1000
+[u S467 . 1 `S459 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES467  1 e 1 @142 ]
+[s S1023 . 1 `uc 1 NCO1IF 1 0 :1:0 
+`uc 1 CWG1IF 1 0 :1:1 
+`uc 1 CLC1IF 1 0 :1:2 
+`uc 1 CLC2IF 1 0 :1:3 
+`uc 1 CLC3IF 1 0 :1:4 
+`uc 1 CLC4IF 1 0 :1:5 
+`uc 1 TX1IF 1 0 :1:6 
+`uc 1 RC1IF 1 0 :1:7 
+]
+"1090
+[u S1032 . 1 `S1023 1 . 1 0 ]
+[v _PIR4bits PIR4bits `VES1032  1 e 1 @144 ]
+[s S48 . 1 `uc 1 ADIF 1 0 :1:0 
+`uc 1 ADTIF 1 0 :1:1 
+`uc 1 ZCDIF 1 0 :1:2 
+]
+"1209
+[u S52 . 1 `S48 1 . 1 0 ]
+[v _PIR6bits PIR6bits `VES52  1 e 1 @146 ]
+[s S988 . 1 `uc 1 INTE 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 IOCIE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+"1242
+[u S993 . 1 `S988 1 . 1 0 ]
+[v _PIE0bits PIE0bits `VES993  1 e 1 @150 ]
+[s S1044 . 1 `uc 1 NVMIE 1 0 :1:0 
+`uc 1 CRCIE 1 0 :1:1 
+`uc 1 SCANIE 1 0 :1:2 
+`uc 1 ACTIE 1 0 :1:3 
+`uc 1 CSWIE 1 0 :1:4 
+`uc 1 OSFIE 1 0 :1:5 
+`uc 1 TMR1IE 1 0 :1:6 
+`uc 1 TMR1GIE 1 0 :1:7 
+]
+"1279
+[u S1053 . 1 `S1044 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES1053  1 e 1 @151 ]
+[s S478 . 1 `uc 1 TMR3IE 1 0 :1:0 
+`uc 1 TMR3GIE 1 0 :1:1 
+`uc 1 TMR2IE 1 0 :1:2 
+`uc 1 TMR4IE 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 CCP1IE 1 0 :1:5 
+`uc 1 CCP2IE 1 0 :1:6 
+]
+"1340
+[u S486 . 1 `S478 1 . 1 0 ]
+[v _PIE2bits PIE2bits `VES486  1 e 1 @152 ]
+[s S1002 . 1 `uc 1 NCO1IE 1 0 :1:0 
+`uc 1 CWG1IE 1 0 :1:1 
+`uc 1 CLC1IE 1 0 :1:2 
+`uc 1 CLC2IE 1 0 :1:3 
+`uc 1 CLC3IE 1 0 :1:4 
+`uc 1 CLC4IE 1 0 :1:5 
+`uc 1 TX1IE 1 0 :1:6 
+`uc 1 RC1IE 1 0 :1:7 
+]
+"1430
+[u S1011 . 1 `S1002 1 . 1 0 ]
+[v _PIE4bits PIE4bits `VES1011  1 e 1 @154 ]
+"2446
+[v _TMR0L TMR0L `VEuc  1 e 1 @412 ]
+"2584
+[v _TMR0H TMR0H `VEuc  1 e 1 @413 ]
+"2838
+[v _T0CON0 T0CON0 `VEuc  1 e 1 @414 ]
+[s S1503 . 1 `uc 1 OUTPS 1 0 :4:0 
+`uc 1 MD16 1 0 :1:4 
+`uc 1 OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 EN 1 0 :1:7 
+]
+"2866
+[s S1509 . 1 `uc 1 T0OUTPS 1 0 :4:0 
+`uc 1 T0MD16 1 0 :1:4 
+`uc 1 T0OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 T0EN 1 0 :1:7 
+]
+[s S1515 . 1 `uc 1 OUTPS0 1 0 :1:0 
+`uc 1 OUTPS1 1 0 :1:1 
+`uc 1 OUTPS2 1 0 :1:2 
+`uc 1 OUTPS3 1 0 :1:3 
+`uc 1 T016BIT 1 0 :1:4 
+]
+[u S1521 . 1 `S1503 1 . 1 0 `S1509 1 . 1 0 `S1515 1 . 1 0 ]
+[v _T0CON0bits T0CON0bits `VES1521  1 e 1 @414 ]
+"2936
+[v _T0CON1 T0CON1 `VEuc  1 e 1 @415 ]
+"3357
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @653 ]
+"3497
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @655 ]
+"3599
+[v _OSCEN OSCEN `VEuc  1 e 1 @657 ]
+"3656
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @658 ]
+"3714
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @659 ]
+"3754
+[v _ACTCON ACTCON `VEuc  1 e 1 @660 ]
+"3978
+[v _TMR1L TMR1L `VEuc  1 e 1 @780 ]
+"4148
+[v _TMR1H TMR1H `VEuc  1 e 1 @781 ]
+"4268
+[v _T1CON T1CON `VEuc  1 e 1 @782 ]
+[s S1295 . 1 `uc 1 ON 1 0 :1:0 
+`uc 1 RD16 1 0 :1:1 
+`uc 1 nSYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 CKPS 1 0 :2:4 
+]
+"4299
+[s S1301 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 T1RD16 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+]
+[s S1308 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 CKPS0 1 0 :1:4 
+`uc 1 CKPS1 1 0 :1:5 
+]
+[s S1312 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RD161 1 0 :1:1 
+]
+[u S1315 . 1 `S1295 1 . 1 0 `S1301 1 . 1 0 `S1308 1 . 1 0 `S1312 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES1315  1 e 1 @782 ]
+"4364
+[v _T1GCON T1GCON `VEuc  1 e 1 @783 ]
+[s S1341 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 GVAL 1 0 :1:2 
+`uc 1 GGO_nDONE 1 0 :1:3 
+`uc 1 GSPM 1 0 :1:4 
+`uc 1 GTM 1 0 :1:5 
+`uc 1 GPOL 1 0 :1:6 
+`uc 1 GE 1 0 :1:7 
+]
+"4398
+[s S1349 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T1GVAL 1 0 :1:2 
+`uc 1 T1GGO_nDONE 1 0 :1:3 
+`uc 1 T1GSPM 1 0 :1:4 
+`uc 1 T1GTM 1 0 :1:5 
+`uc 1 T1GPOL 1 0 :1:6 
+`uc 1 T1GE 1 0 :1:7 
+]
+[s S1357 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T1GGO 1 0 :1:3 
+]
+[u S1360 . 1 `S1341 1 . 1 0 `S1349 1 . 1 0 `S1357 1 . 1 0 ]
+[v _T1GCONbits T1GCONbits `VES1360  1 e 1 @783 ]
+"4560
+[v _T1GATE T1GATE `VEuc  1 e 1 @784 ]
+"4726
+[v _T1CLK T1CLK `VEuc  1 e 1 @785 ]
+"7108
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @1036 ]
+"7128
+[v _CCPR1H CCPR1H `VEuc  1 e 1 @1037 ]
+"7148
+[v _CCP1CON CCP1CON `VEuc  1 e 1 @1038 ]
+"7275
+[v _CCP1CAP CCP1CAP `VEuc  1 e 1 @1039 ]
+[s S450 . 1 `uc 1 C1TSEL 1 0 :2:0 
+`uc 1 C2TSEL 1 0 :2:2 
+]
+"7620
+[u S453 . 1 `S450 1 . 1 0 ]
+[v _CCPTMRS0bits CCPTMRS0bits `VES453  1 e 1 @1055 ]
+"11240
+[v _RC1REG RC1REG `VEuc  1 e 1 @1804 ]
+"11260
+[v _TX1REG TX1REG `VEuc  1 e 1 @1805 ]
+"11287
+[v _SP1BRGL SP1BRGL `VEuc  1 e 1 @1806 ]
+"11307
+[v _SP1BRGH SP1BRGH `VEuc  1 e 1 @1807 ]
+"11327
+[v _RC1STA RC1STA `VEuc  1 e 1 @1808 ]
+[s S1797 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"11344
+[u S1806 . 1 `S1797 1 . 1 0 ]
+[v _RC1STAbits RC1STAbits `VES1806  1 e 1 @1808 ]
+"11389
+[v _TX1STA TX1STA `VEuc  1 e 1 @1809 ]
+[s S1818 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"11406
+[u S1827 . 1 `S1818 1 . 1 0 ]
+[v _TX1STAbits TX1STAbits `VES1827  1 e 1 @1809 ]
+"11451
+[v _BAUD1CON BAUD1CON `VEuc  1 e 1 @1810 ]
+[s S1839 . 1 `uc 1 ABDEN 1 0 :1:0 
+`uc 1 WUE 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 BRG16 1 0 :1:3 
+`uc 1 SCKP 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 RCIDL 1 0 :1:6 
+`uc 1 ABDOVF 1 0 :1:7 
+]
+"11468
+[u S1848 . 1 `S1839 1 . 1 0 ]
+[v _BAUD1CONbits BAUD1CONbits `VES1848  1 e 1 @1810 ]
+"14382
+[v _OPA1CON0 OPA1CON0 `VEuc  1 e 1 @2316 ]
+[s S553 . 1 `uc 1 SOC 1 0 :3:0 
+`uc 1 UG 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 CPON 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 EN 1 0 :1:7 
+]
+"14416
+[s S560 . 1 `uc 1 SOC0 1 0 :1:0 
+`uc 1 SOC1 1 0 :1:1 
+`uc 1 SOC2 1 0 :1:2 
+`uc 1 UG0 1 0 :1:3 
+]
+[s S565 . 1 `uc 1 OPA1SOC 1 0 :3:0 
+`uc 1 OPA1UG 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 OPA1CPON 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 OPA1EN 1 0 :1:7 
+]
+[s S572 . 1 `uc 1 OPA1SOC0 1 0 :1:0 
+`uc 1 OPA1SOC1 1 0 :1:1 
+`uc 1 OPA1SOC2 1 0 :1:2 
+]
+[u S576 . 1 `S553 1 . 1 0 `S560 1 . 1 0 `S565 1 . 1 0 `S572 1 . 1 0 ]
+[v _OPA1CON0bits OPA1CON0bits `VES576  1 e 1 @2316 ]
+"14496
+[v _OPA1CON1 OPA1CON1 `VEuc  1 e 1 @2317 ]
+[s S729 . 1 `uc 1 NSS 1 0 :3:0 
+`uc 1 RESON 1 0 :1:3 
+`uc 1 GSEL 1 0 :3:4 
+]
+"14531
+[s S733 . 1 `uc 1 NSS0 1 0 :1:0 
+`uc 1 NSS1 1 0 :1:1 
+`uc 1 NSS2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 GSEL0 1 0 :1:4 
+`uc 1 GSEL1 1 0 :1:5 
+`uc 1 GSEL2 1 0 :1:6 
+]
+[s S741 . 1 `uc 1 OPA1NSS 1 0 :3:0 
+`uc 1 OPA1RESON 1 0 :1:3 
+`uc 1 OPA1GSEL 1 0 :3:4 
+]
+[s S745 . 1 `uc 1 OPA1NSS0 1 0 :1:0 
+`uc 1 OPA1NSS1 1 0 :1:1 
+`uc 1 OPA1NSS2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 OPA1GSEL0 1 0 :1:4 
+`uc 1 OPA1GSEL1 1 0 :1:5 
+`uc 1 OPA1GSEL2 1 0 :1:6 
+]
+[u S753 . 1 `S729 1 . 1 0 `S733 1 . 1 0 `S741 1 . 1 0 `S745 1 . 1 0 ]
+[v _OPA1CON1bits OPA1CON1bits `VES753  1 e 1 @2317 ]
+"14626
+[v _OPA1CON2 OPA1CON2 `VEuc  1 e 1 @2318 ]
+[s S612 . 1 `uc 1 PCH 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 NCH 1 0 :3:4 
+]
+"14661
+[s S616 . 1 `uc 1 PCH0 1 0 :1:0 
+`uc 1 PCH1 1 0 :1:1 
+`uc 1 PCH2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 NCH0 1 0 :1:4 
+`uc 1 NCH1 1 0 :1:5 
+`uc 1 NCH2 1 0 :1:6 
+]
+[s S624 . 1 `uc 1 OPA1PCH 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 OPA1NCH 1 0 :3:4 
+]
+[s S628 . 1 `uc 1 OPA1PCH0 1 0 :1:0 
+`uc 1 OPA1PCH1 1 0 :1:1 
+`uc 1 OPA1PCH2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 OPA1NCH0 1 0 :1:4 
+`uc 1 OPA1NCH1 1 0 :1:5 
+`uc 1 OPA1NCH2 1 0 :1:6 
+]
+[u S636 . 1 `S612 1 . 1 0 `S616 1 . 1 0 `S624 1 . 1 0 `S628 1 . 1 0 ]
+[v _OPA1CON2bits OPA1CON2bits `VES636  1 e 1 @2318 ]
+"14746
+[v _OPA1CON3 OPA1CON3 `VEuc  1 e 1 @2319 ]
+[s S671 . 1 `uc 1 PSS 1 0 :5:0 
+`uc 1 . 1 0 :1:5 
+`uc 1 FMS 1 0 :2:6 
+]
+"14777
+[s S675 . 1 `uc 1 PSS0 1 0 :1:0 
+`uc 1 PSS1 1 0 :1:1 
+`uc 1 . 1 0 :4:2 
+`uc 1 FMS0 1 0 :1:6 
+`uc 1 FMS1 1 0 :1:7 
+]
+[s S681 . 1 `uc 1 OPA1PSS 1 0 :5:0 
+`uc 1 . 1 0 :1:5 
+`uc 1 OPA1FMS 1 0 :2:6 
+]
+[s S685 . 1 `uc 1 OPA1PSS0 1 0 :1:0 
+`uc 1 OPA1PSS1 1 0 :1:1 
+`uc 1 . 1 0 :4:2 
+`uc 1 OPA1FMS0 1 0 :1:6 
+`uc 1 OPA1FMS1 1 0 :1:7 
+]
+[u S691 . 1 `S671 1 . 1 0 `S675 1 . 1 0 `S681 1 . 1 0 `S685 1 . 1 0 ]
+[v _OPA1CON3bits OPA1CON3bits `VES691  1 e 1 @2319 ]
+"14842
+[v _OPA1HWC OPA1HWC `VEuc  1 e 1 @2320 ]
+[s S792 . 1 `uc 1 HWCL 1 0 :3:0 
+`uc 1 ORPOL 1 0 :1:3 
+`uc 1 HWCH 1 0 :3:4 
+`uc 1 OREN 1 0 :1:7 
+]
+"14879
+[s S797 . 1 `uc 1 HWCL0 1 0 :1:0 
+`uc 1 HWCL1 1 0 :1:1 
+`uc 1 HWCL2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 HWCH0 1 0 :1:4 
+`uc 1 HWCH1 1 0 :1:5 
+`uc 1 HWCH2 1 0 :1:6 
+]
+[s S805 . 1 `uc 1 OPA1HWCL 1 0 :3:0 
+`uc 1 OPA1ORPOL 1 0 :1:3 
+`uc 1 OPA1HWCH 1 0 :3:4 
+`uc 1 OPA1OREN 1 0 :1:7 
+]
+[s S810 . 1 `uc 1 OPA1HWCL0 1 0 :1:0 
+`uc 1 OPA1HWCL1 1 0 :1:1 
+`uc 1 OPA1HWCL2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 OPA1HWCH0 1 0 :1:4 
+`uc 1 OPA1HWCH1 1 0 :1:5 
+`uc 1 OPA1HWCH2 1 0 :1:6 
+]
+[u S818 . 1 `S792 1 . 1 0 `S797 1 . 1 0 `S805 1 . 1 0 `S810 1 . 1 0 ]
+[v _OPA1HWCbits OPA1HWCbits `VES818  1 e 1 @2320 ]
+"14984
+[v _OPA1OFFSET OPA1OFFSET `VEuc  1 e 1 @2321 ]
+"15112
+[v _OPA1ORS OPA1ORS `VEuc  1 e 1 @2322 ]
+"17380
+[v _ADLTHL ADLTHL `VEuc  1 e 1 @7436 ]
+"17508
+[v _ADLTHH ADLTHH `VEuc  1 e 1 @7437 ]
+"17643
+[v _ADUTHL ADUTHL `VEuc  1 e 1 @7438 ]
+"17771
+[v _ADUTHH ADUTHH `VEuc  1 e 1 @7439 ]
+"17906
+[v _ADERRL ADERRL `VEuc  1 e 1 @7440 ]
+"18034
+[v _ADERRH ADERRH `VEuc  1 e 1 @7441 ]
+"18169
+[v _ADSTPTL ADSTPTL `VEuc  1 e 1 @7442 ]
+"18297
+[v _ADSTPTH ADSTPTH `VEuc  1 e 1 @7443 ]
+"18432
+[v _ADFLTRL ADFLTRL `VEuc  1 e 1 @7444 ]
+"18560
+[v _ADFLTRH ADFLTRH `VEuc  1 e 1 @7445 ]
+"18697
+[v _ADACCL ADACCL `VEuc  1 e 1 @7446 ]
+"18825
+[v _ADACCH ADACCH `VEuc  1 e 1 @7447 ]
+"18953
+[v _ADACCU ADACCU `VEuc  1 e 1 @7448 ]
+"19009
+[v _ADCNT ADCNT `VEuc  1 e 1 @7449 ]
+"19137
+[v _ADRPT ADRPT `VEuc  1 e 1 @7450 ]
+"19272
+[v _ADPREVL ADPREVL `VEuc  1 e 1 @7451 ]
+"19400
+[v _ADPREVH ADPREVH `VEuc  1 e 1 @7452 ]
+"19535
+[v _ADRESL ADRESL `VEuc  1 e 1 @7453 ]
+"19663
+[v _ADRESH ADRESH `VEuc  1 e 1 @7454 ]
+"19783
+[v _ADPCH ADPCH `VEuc  1 e 1 @7455 ]
+"19849
+[v _ADNCH ADNCH `VEuc  1 e 1 @7456 ]
+"19922
+[v _ADACQL ADACQL `VEuc  1 e 1 @7457 ]
+"20050
+[v _ADACQH ADACQH `VEuc  1 e 1 @7458 ]
+"20142
+[v _ADCAP ADCAP `VEuc  1 e 1 @7459 ]
+"20201
+[v _ADPREL ADPREL `VEuc  1 e 1 @7460 ]
+"20329
+[v _ADPREH ADPREH `VEuc  1 e 1 @7461 ]
+"20421
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @7462 ]
+[s S69 . 1 `uc 1 GO 1 0 :1:0 
+`uc 1 IC 1 0 :1:1 
+`uc 1 FM 1 0 :2:2 
+`uc 1 CS 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CONT 1 0 :1:6 
+`uc 1 ON 1 0 :1:7 
+]
+"20458
+[s S77 . 1 `uc 1 ADGO 1 0 :1:0 
+`uc 1 ADIC 1 0 :1:1 
+`uc 1 ADFM 1 0 :2:2 
+`uc 1 ADCS 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ADCONT 1 0 :1:6 
+`uc 1 ADON 1 0 :1:7 
+]
+[s S85 . 1 `uc 1 DONE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 FM0 1 0 :1:2 
+`uc 1 FM1 1 0 :1:3 
+]
+[s S90 . 1 `uc 1 GO_nDONE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM0 1 0 :1:2 
+`uc 1 ADFM1 1 0 :1:3 
+]
+[u S95 . 1 `S69 1 . 1 0 `S77 1 . 1 0 `S85 1 . 1 0 `S90 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES95  1 e 1 @7462 ]
+"20553
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @7463 ]
+[s S323 . 1 `uc 1 DSEN 1 0 :1:0 
+`uc 1 PCSC 1 0 :1:1 
+`uc 1 . 1 0 :3:2 
+`uc 1 GPOL 1 0 :1:5 
+`uc 1 IPEN 1 0 :1:6 
+`uc 1 PPOL 1 0 :1:7 
+]
+"20576
+[s S330 . 1 `uc 1 ADDSEN 1 0 :1:0 
+`uc 1 ADPCSC 1 0 :1:1 
+`uc 1 . 1 0 :3:2 
+`uc 1 ADGPOL 1 0 :1:5 
+`uc 1 ADIPEN 1 0 :1:6 
+`uc 1 ADPPOL 1 0 :1:7 
+]
+[u S337 . 1 `S323 1 . 1 0 `S330 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES337  1 e 1 @7463 ]
+"20631
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @7464 ]
+[s S184 . 1 `uc 1 MODE 1 0 :3:0 
+`uc 1 ACLR 1 0 :1:3 
+`uc 1 CRS 1 0 :3:4 
+`uc 1 PSIS 1 0 :1:7 
+]
+"20679
+[s S189 . 1 `uc 1 ADMD0 1 0 :1:0 
+`uc 1 ADMD1 1 0 :1:1 
+`uc 1 ADMD2 1 0 :1:2 
+`uc 1 ADACLR 1 0 :1:3 
+`uc 1 ADCRS0 1 0 :1:4 
+`uc 1 ADCRS1 1 0 :1:5 
+`uc 1 ADCRS2 1 0 :1:6 
+`uc 1 ADPSIS 1 0 :1:7 
+]
+[s S198 . 1 `uc 1 ADMD 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADCRS 1 0 :3:4 
+]
+[s S202 . 1 `uc 1 MODE0 1 0 :1:0 
+`uc 1 MODE1 1 0 :1:1 
+`uc 1 MODE2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 CRS0 1 0 :1:4 
+`uc 1 CRS1 1 0 :1:5 
+`uc 1 CRS2 1 0 :1:6 
+]
+[s S210 . 1 `uc 1 MD 1 0 :3:0 
+]
+[s S212 . 1 `uc 1 MD0 1 0 :1:0 
+`uc 1 MD1 1 0 :1:1 
+`uc 1 MD2 1 0 :1:2 
+]
+[s S216 . 1 `uc 1 ADMODE 1 0 :3:0 
+]
+[u S218 . 1 `S184 1 . 1 0 `S189 1 . 1 0 `S198 1 . 1 0 `S202 1 . 1 0 `S210 1 . 1 0 `S212 1 . 1 0 `S216 1 . 1 0 ]
+[v _ADCON2bits ADCON2bits `VES218  1 e 1 @7464 ]
+"20809
+[v _ADCON3 ADCON3 `VEuc  1 e 1 @7465 ]
+[s S129 . 1 `uc 1 TMD 1 0 :3:0 
+`uc 1 SOI 1 0 :1:3 
+`uc 1 CALC 1 0 :3:4 
+]
+"20844
+[s S133 . 1 `uc 1 ADTMD0 1 0 :1:0 
+`uc 1 ADTMD1 1 0 :1:1 
+`uc 1 ADTMD2 1 0 :1:2 
+`uc 1 ADSOI 1 0 :1:3 
+`uc 1 ADCALC0 1 0 :1:4 
+`uc 1 ADCALC1 1 0 :1:5 
+`uc 1 ADCALC2 1 0 :1:6 
+]
+[s S141 . 1 `uc 1 ADTMD 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADCALC 1 0 :3:4 
+]
+[s S145 . 1 `uc 1 TMD0 1 0 :1:0 
+`uc 1 TMD1 1 0 :1:1 
+`uc 1 TMD2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 CALC0 1 0 :1:4 
+`uc 1 CALC1 1 0 :1:5 
+`uc 1 CALC2 1 0 :1:6 
+]
+[u S153 . 1 `S129 1 . 1 0 `S133 1 . 1 0 `S141 1 . 1 0 `S145 1 . 1 0 ]
+[v _ADCON3bits ADCON3bits `VES153  1 e 1 @7465 ]
+"20939
+[v _ADSTAT ADSTAT `VEuc  1 e 1 @7466 ]
+[s S269 . 1 `uc 1 STAT 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 MATH 1 0 :1:4 
+`uc 1 LTHR 1 0 :1:5 
+`uc 1 UTHR 1 0 :1:6 
+`uc 1 AOV 1 0 :1:7 
+]
+"20974
+[s S276 . 1 `uc 1 ADSTAT0 1 0 :1:0 
+`uc 1 ADSTAT1 1 0 :1:1 
+`uc 1 ADSTAT2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADMATH 1 0 :1:4 
+`uc 1 ADLTHR 1 0 :1:5 
+`uc 1 ADUTHR 1 0 :1:6 
+`uc 1 ADAOV 1 0 :1:7 
+]
+[s S285 . 1 `uc 1 ADSTAT 1 0 :3:0 
+`uc 1 . 1 0 :4:3 
+`uc 1 ADOV 1 0 :1:7 
+]
+[s S289 . 1 `uc 1 STAT0 1 0 :1:0 
+`uc 1 STAT1 1 0 :1:1 
+`uc 1 STAT2 1 0 :1:2 
+]
+[u S293 . 1 `S269 1 . 1 0 `S276 1 . 1 0 `S285 1 . 1 0 `S289 1 . 1 0 ]
+[v _ADSTATbits ADSTATbits `VES293  1 e 1 @7466 ]
+"21064
+[v _ADREF ADREF `VEuc  1 e 1 @7467 ]
+"21120
+[v _ADACT ADACT `VEuc  1 e 1 @7468 ]
+"21212
+[v _ADCLK ADCLK `VEuc  1 e 1 @7469 ]
+"21316
+[v _ADCG1A ADCG1A `VEuc  1 e 1 @7470 ]
+"21361
+[v _ADCG1B ADCG1B `VEuc  1 e 1 @7471 ]
+"21400
+[v _ADCG1C ADCG1C `VEuc  1 e 1 @7472 ]
+"21622
+[v _RB7PPS RB7PPS `VEuc  1 e 1 @7579 ]
+"21722
+[v _RC4PPS RC4PPS `VEuc  1 e 1 @7584 ]
+"22172
+[v _CCP1PPS CCP1PPS `VEuc  1 e 1 @7710 ]
+"22696
+[v _RX1PPS RX1PPS `VEuc  1 e 1 @7746 ]
+"23044
+[v _ADACTPPS ADACTPPS `VEuc  1 e 1 @7760 ]
+"23084
+[v _ANSELA ANSELA `VEuc  1 e 1 @7820 ]
+"23162
+[v _WPUA WPUA `VEuc  1 e 1 @7821 ]
+"23212
+[v _ODCONA ODCONA `VEuc  1 e 1 @7822 ]
+"23257
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @7823 ]
+"23302
+[v _INLVLA INLVLA `VEuc  1 e 1 @7824 ]
+"23352
+[v _IOCAP IOCAP `VEuc  1 e 1 @7825 ]
+"23402
+[v _IOCAN IOCAN `VEuc  1 e 1 @7826 ]
+"23452
+[v _IOCAF IOCAF `VEuc  1 e 1 @7827 ]
+"23502
+[v _ANSELB ANSELB `VEuc  1 e 1 @7830 ]
+"23568
+[v _WPUB WPUB `VEuc  1 e 1 @7831 ]
+"23607
+[v _ODCONB ODCONB `VEuc  1 e 1 @7832 ]
+"23646
+[v _SLRCONB SLRCONB `VEuc  1 e 1 @7833 ]
+"23685
+[v _INLVLB INLVLB `VEuc  1 e 1 @7834 ]
+"23724
+[v _IOCBP IOCBP `VEuc  1 e 1 @7835 ]
+"23763
+[v _IOCBN IOCBN `VEuc  1 e 1 @7836 ]
+"23802
+[v _IOCBF IOCBF `VEuc  1 e 1 @7837 ]
+"23841
+[v _ANSELC ANSELC `VEuc  1 e 1 @7840 ]
+"23953
+[v _WPUC WPUC `VEuc  1 e 1 @7841 ]
+"24015
+[v _ODCONC ODCONC `VEuc  1 e 1 @7842 ]
+"24077
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @7843 ]
+"24139
+[v _INLVLC INLVLC `VEuc  1 e 1 @7844 ]
+"24201
+[v _IOCCP IOCCP `VEuc  1 e 1 @7845 ]
+"24263
+[v _IOCCN IOCCN `VEuc  1 e 1 @7846 ]
+"24325
+[v _IOCCF IOCCF `VEuc  1 e 1 @7847 ]
+"118 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+[v _prec prec `i  1 s 2 prec ]
+[v _width width `i  1 s 2 width ]
+"119
+[v _flags flags `uc  1 s 1 flags ]
+"144
+[v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
+"3 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\errno.c
+[v _errno errno `i  1 e 2 0 ]
+"69 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\main.c
+[v _TMR1_overflow TMR1_overflow `VEuc  1 e 1 0 ]
+"70
+[v _TMR0_overflowFlag TMR0_overflowFlag `VEa  1 e 1 0 ]
+"71
+[v _CCP_capturedValue CCP_capturedValue `VEus  1 e 2 0 ]
+"72
+[v _TMR1_overflowValue TMR1_overflowValue `VEuc  1 e 1 0 ]
+"73
+[v _ccpCapturedFqFlag ccpCapturedFqFlag `VEa  1 e 1 0 ]
+"75
+[v _timePeriod timePeriod `ul  1 s 4 timePeriod ]
+"76
+[v _tdsValue tdsValue `us  1 s 2 tdsValue ]
+"77
+[v _tdsProbeTemperature tdsProbeTemperature `us  1 s 2 tdsProbeTemperature ]
+"78
+[v _capturedFq capturedFq `ul  1 s 4 capturedFq ]
+"40 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\mcc_generated_files/capture/src/ccp1.c
+[v _CCP1_CallBack CCP1_CallBack `*.37(v  1 s 2 CCP1_CallBack ]
+"38 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\mcc_generated_files/system/src/interrupt.c
+[v _INT_InterruptHandler INT_InterruptHandler `*.37(v  1 e 2 0 ]
+[s S1224 TMR_INTERFACE 12 `*.37(v 1 Initialize 2 0 `*.37(v 1 Start 2 2 `*.37(v 1 Stop 2 4 `*.37(v 1 PeriodCountSet 2 6 `*.37(v 1 TimeoutCallbackRegister 2 8 `*.37(v 1 Tasks 2 10 ]
+"37 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\mcc_generated_files/timer/src/tmr0.c
+[v _Timer0 Timer0 `DCS1224  1 e 12 0 ]
+"46
+[v _Timer0_OverflowCallback Timer0_OverflowCallback `*.37(v  1 s 2 Timer0_OverflowCallback ]
+"43 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\mcc_generated_files/timer/src/tmr1.c
+[v _timer1ReloadVal timer1ReloadVal `VEus  1 e 2 0 ]
+"46
+[v _Timer1 Timer1 `DCS1224  1 e 12 0 ]
+"54
+[v _Timer1_OverflowCallback Timer1_OverflowCallback `*.37(v  1 s 2 Timer1_OverflowCallback ]
+"80 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\mcc_generated_files/uart/src/eusart1.c
+[v _eusart1RxHead eusart1RxHead `VEuc  1 s 1 eusart1RxHead ]
+"81
+[v _eusart1RxTail eusart1RxTail `VEuc  1 s 1 eusart1RxTail ]
+"82
+[v _eusart1RxBuffer eusart1RxBuffer `VE[128]uc  1 s 128 eusart1RxBuffer ]
+[s S1757 . 1 `uc 1 perr 1 0 :1:0 
+`uc 1 ferr 1 0 :1:1 
+`uc 1 oerr 1 0 :1:2 
+`uc 1 reserved 1 0 :5:3 
+]
+"83
+[u S1762 . 2 `S1757 1 . 1 0 `ui 1 status 2 0 ]
+[v _eusart1RxStatusBuffer eusart1RxStatusBuffer `VE[128]S1762  1 s 256 eusart1RxStatusBuffer ]
+"84
+[v _eusart1RxCount eusart1RxCount `VEuc  1 e 1 0 ]
+[s S1757 . 1 `uc 1 perr 1 0 :1:0 
+`uc 1 ferr 1 0 :1:1 
+`uc 1 oerr 1 0 :1:2 
+`uc 1 reserved 1 0 :5:3 
+]
+"86
+[u S1762 . 2 `S1757 1 . 1 0 `ui 1 status 2 0 ]
+[v _eusart1RxLastError eusart1RxLastError `VES1762  1 e 2 0 ]
+"93
+[v _EUSART1_FramingErrorHandler EUSART1_FramingErrorHandler `*.37(v  1 e 2 0 ]
+"94
+[v _EUSART1_OverrunErrorHandler EUSART1_OverrunErrorHandler `*.37(v  1 e 2 0 ]
+"105 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\main.c
+[v _main main `(i  1 e 2 0 ]
+{
+[s S2012 . 19 `[5]us 1 values 10 0 `ul 1 sum 4 10 `ul 1 count 4 14 `uc 1 index 1 18 ]
+"106
+[v main@F9741 F9741 `S2012  1 s 19 F9741 ]
+"169
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\printf.c
+[v _printf printf `(i  1 e 2 0 ]
+{
+"8
+[v printf@ap ap `[1]*.4v  1 a 1 68 ]
+"5
+[v printf@fmt fmt `*.25DCuc  1 p 2 64 ]
+"13
+} 0
+"1546 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+{
+"1549
+[v vfprintf@cfmt cfmt `*.25uc  1 a 2 62 ]
+[s S2689 _IO_FILE 0 ]
+"1546
+[v vfprintf@fp fp `*.39S2689  1 p 2 56 ]
+[v vfprintf@fmt fmt `*.25DCuc  1 p 2 58 ]
+[v vfprintf@ap ap `*.4*.4v  1 p 1 60 ]
+"1569
+} 0
+"1048
+[v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
+{
+[u S2707 . 4 `i 1 sint 2 0 `ui 1 uint 2 0 `*.39v 1 vp 2 0 `d 1 f 4 0 ]
+"1059
+[v vfpfcnvrt@convarg convarg `S2707  1 a 4 48 ]
+"1050
+[v vfpfcnvrt@cp cp `*.25uc  1 a 2 54 ]
+[s S2689 _IO_FILE 0 ]
+"1048
+[v vfpfcnvrt@fp fp `*.39S2689  1 p 2 40 ]
+[v vfpfcnvrt@fmt fmt `*.4*.25uc  1 p 1 42 ]
+[v vfpfcnvrt@ap ap `*.4*.4v  1 p 1 43 ]
+"1543
+} 0
+"917
+[v _utoa utoa `(v  1 s 1 utoa ]
+{
+"919
+[v utoa@i i `i  1 a 2 38 ]
+[v utoa@p p `i  1 a 2 36 ]
+[v utoa@w w `i  1 a 2 34 ]
+[s S2689 _IO_FILE 0 ]
+"917
+[v utoa@fp fp `*.39S2689  1 p 2 29 ]
+[v utoa@d d `ui  1 p 2 31 ]
+"947
+} 0
+"152
+[v _pad pad `(v  1 s 1 pad ]
+{
+"154
+[v pad@w w `i  1 a 2 27 ]
+[v pad@i i `i  1 a 2 25 ]
+[s S2689 _IO_FILE 0 ]
+"152
+[v pad@fp fp `*.39S2689  1 p 2 19 ]
+[v pad@buf buf `*.5uc  1 p 1 21 ]
+[v pad@p p `i  1 p 2 22 ]
+"183
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+{
+[v fputs@s s `*.5DCuc  1 a 1 wreg ]
+"11
+[v fputs@i i `i  1 a 2 17 ]
+"10
+[v fputs@c c `uc  1 a 1 16 ]
+"8
+[v fputs@s s `*.5DCuc  1 a 1 wreg ]
+[u S2668 . 2 `*.39uc 1 buffer 2 0 `*.39DCuc 1 source 2 0 ]
+[s S2671 _IO_FILE 11 `S2668 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputs@fp fp `*.39S2671  1 p 2 11 ]
+"13
+[v fputs@s s `*.5DCuc  1 a 1 15 ]
+"19
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 5 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 0 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 2 ]
+"25
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 6 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 5 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
+"30
+} 0
+"3 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\strncmp.c
+[v _strncmp strncmp `(i  1 e 2 0 ]
+{
+"5
+[v strncmp@r r `*.25DCuc  1 a 2 9 ]
+[v strncmp@l l `*.25DCuc  1 a 2 7 ]
+"3
+[v strncmp@_l _l `*.25DCuc  1 p 2 0 ]
+[v strncmp@_r _r `*.25DCuc  1 p 2 2 ]
+[v strncmp@n n `ui  1 p 2 4 ]
+"9
+} 0
+"862 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+[v _stoa stoa `(v  1 s 1 stoa ]
+{
+"864
+[v stoa@nuls nuls `[7]uc  1 a 7 17 ]
+"865
+[v stoa@p p `i  1 a 2 32 ]
+[v stoa@l l `i  1 a 2 30 ]
+"864
+[v stoa@cp cp `*.26uc  1 a 2 28 ]
+"865
+[v stoa@i i `i  1 a 2 26 ]
+[v stoa@w w `i  1 a 2 24 ]
+[s S2689 _IO_FILE 0 ]
+"862
+[v stoa@fp fp `*.39S2689  1 p 2 11 ]
+[v stoa@s s `*.26uc  1 p 2 13 ]
+"864
+[v stoa@F1149 F1149 `[7]uc  1 s 7 F1149 ]
+"913
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+{
+"7
+[v strlen@a a `*.26DCuc  1 a 2 3 ]
+"5
+[v strlen@s s `*.26DCuc  1 p 2 0 ]
+"12
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+{
+[v fputc@c c `i  1 p 2 2 ]
+[u S2668 . 2 `*.39uc 1 buffer 2 0 `*.39DCuc 1 source 2 0 ]
+[s S2671 _IO_FILE 11 `S2668 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputc@fp fp `*.39S2671  1 p 2 4 ]
+"24
+} 0
+"318 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\mcc_generated_files/uart/src/eusart1.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+[v putch@txData txData `uc  1 a 1 wreg ]
+[v putch@txData txData `uc  1 a 1 wreg ]
+[v putch@txData txData `uc  1 a 1 1 ]
+"322
+} 0
+"307
+[v _EUSART1_Write EUSART1_Write `(v  1 e 1 0 ]
+{
+[v EUSART1_Write@txData txData `uc  1 p 1 0 ]
+"310
+} 0
+"228
+[v _EUSART1_IsTxReady EUSART1_IsTxReady `(a  1 e 1 0 ]
+{
+"231
+} 0
+"36 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\mcc_generated_files/system/src/system.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"47
+} 0
+"57 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\mcc_generated_files/timer/src/tmr1.c
+[v _Timer1_Initialize Timer1_Initialize `(v  1 e 1 0 ]
+{
+"83
+} 0
+"116 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\mcc_generated_files/timer/src/tmr0.c
+[v _Timer0_OverflowCallbackRegister Timer0_OverflowCallbackRegister `(v  1 e 1 0 ]
+{
+[v Timer0_OverflowCallbackRegister@CallbackHandler CallbackHandler `*.37(v  1 p 2 0 ]
+"119
+} 0
+"167 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\mcc_generated_files/timer/src/tmr1.c
+[v _Timer1_OverflowCallbackRegister Timer1_OverflowCallbackRegister `(v  1 e 1 0 ]
+{
+[v Timer1_OverflowCallbackRegister@CallbackHandler CallbackHandler `*.37(v  1 p 2 0 ]
+"170
+} 0
+"49 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\mcc_generated_files/timer/src/tmr0.c
+[v _Timer0_Initialize Timer0_Initialize `(v  1 e 1 0 ]
+{
+"72
+} 0
+"38 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\mcc_generated_files/system/src/pins.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"116
+} 0
+"44 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\mcc_generated_files/opa/src/opa1.c
+[v _OPA1_Initialize OPA1_Initialize `(v  1 e 1 0 ]
+{
+"63
+} 0
+"40 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\mcc_generated_files/system/src/interrupt.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+{
+"50
+} 0
+"113
+[v _INT_SetInterruptHandler INT_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v INT_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+"115
+} 0
+"106 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\mcc_generated_files/uart/src/eusart1.c
+[v _EUSART1_Initialize EUSART1_Initialize `(v  1 e 1 0 ]
+{
+"133
+} 0
+"352
+[v _EUSART1_RxCompleteCallbackRegister EUSART1_RxCompleteCallbackRegister `(v  1 e 1 0 ]
+{
+[v EUSART1_RxCompleteCallbackRegister@callbackHandler callbackHandler `*.37(v  1 p 2 0 ]
+"358
+} 0
+"344
+[v _EUSART1_OverrunErrorCallbackRegister EUSART1_OverrunErrorCallbackRegister `(v  1 e 1 0 ]
+{
+[v EUSART1_OverrunErrorCallbackRegister@callbackHandler callbackHandler `*.37(v  1 p 2 0 ]
+"350
+} 0
+"336
+[v _EUSART1_FramingErrorCallbackRegister EUSART1_FramingErrorCallbackRegister `(v  1 e 1 0 ]
+{
+[v EUSART1_FramingErrorCallbackRegister@callbackHandler callbackHandler `*.37(v  1 p 2 0 ]
+"342
+} 0
+"37 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\mcc_generated_files/system/src/clock.c
+[v _CLOCK_Initialize CLOCK_Initialize `(v  1 e 1 0 ]
+{
+"53
+} 0
+"56 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\mcc_generated_files/capture/src/ccp1.c
+[v _CCP1_Initialize CCP1_Initialize `(v  1 e 1 0 ]
+{
+"83
+} 0
+"100
+[v _CCP1_SetCallBack CCP1_SetCallBack `(v  1 e 1 0 ]
+{
+[v CCP1_SetCallBack@customCallBack customCallBack `*.37(v  1 p 2 0 ]
+"102
+} 0
+"45 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\mcc_generated_files/adcc/src/adcc.c
+[v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
+{
+"106
+} 0
+"246 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\main.c
+[v _GetWaterTDS GetWaterTDS `(us  1 s 2 GetWaterTDS ]
+{
+"248
+[v GetWaterTDS@conductivity conductivity `f  1 a 4 6 ]
+"249
+[v GetWaterTDS@waterTDS waterTDS `us  1 a 2 0 ]
+"246
+[v GetWaterTDS@capturedFq capturedFq `ul  1 p 4 70 ]
+[v GetWaterTDS@temperature temperature `us  1 p 2 74 ]
+"257
+} 0
+"259
+[v _GetTempCompensatedConductivityValue GetTempCompensatedConductivityValue `(f  1 s 4 GetTempCompensatedConductivityValue ]
+{
+[v GetTempCompensatedConductivityValue@conductivity conductivity `f  1 p 4 60 ]
+[v GetTempCompensatedConductivityValue@temperature temperature `us  1 p 2 64 ]
+"269
+} 0
+"228
+[v _GetTdsProbeTemperature GetTdsProbeTemperature `(us  1 s 2 GetTdsProbeTemperature ]
+{
+"231
+[v GetTdsProbeTemperature@probeTemperature probeTemperature `f  1 a 4 42 ]
+"230
+[v GetTdsProbeTemperature@adcCount adcCount `us  1 a 2 40 ]
+"244
+} 0
+"29 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\logf.c
+[v _logf logf `(f  1 e 4 0 ]
+{
+"33
+[v logf@ix ix `ul  1 a 4 62 ]
+"32
+[v logf@f f `f  1 a 4 58 ]
+[u S2634 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+"31
+[v logf@u u `S2634  1 a 4 54 ]
+"32
+[v logf@w w `f  1 a 4 46 ]
+[v logf@z z `f  1 a 4 42 ]
+[v logf@s s `f  1 a 4 38 ]
+[v logf@dk dk `f  1 a 4 34 ]
+[v logf@hfsq hfsq `f  1 a 4 30 ]
+[v logf@t2 t2 `f  1 a 4 8 ]
+[v logf@t1 t1 `f  1 a 4 4 ]
+[v logf@R R `f  1 a 4 0 ]
+"34
+[v logf@k k `i  1 a 2 28 ]
+"29
+[v logf@x x `f  1 p 4 76 ]
+"30
+[v logf@F472 F472 `S2634  1 s 4 F472 ]
+"72
+} 0
+"10 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 10 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 9 ]
+"10
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 0 ]
+"15
+[v ___xxtofl@sign sign `uc  1 a 1 8 ]
+"44
+} 0
+"242 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcadd.c
+[v ___flsub __flsub `(d  1 e 4 0 ]
+{
+[v ___flsub@a a `d  1 p 4 60 ]
+[v ___flsub@b b `d  1 p 4 64 ]
+"250
+} 0
+"10
+[v ___fladd __fladd `(d  1 e 4 0 ]
+{
+"17
+[v ___fladd@grs grs `uc  1 a 1 59 ]
+"15
+[v ___fladd@bexp bexp `uc  1 a 1 58 ]
+"16
+[v ___fladd@aexp aexp `uc  1 a 1 57 ]
+"13
+[v ___fladd@signs signs `uc  1 a 1 56 ]
+"10
+[v ___fladd@b b `d  1 p 4 40 ]
+[v ___fladd@a a `d  1 p 4 44 ]
+"237
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+{
+[s S2487 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"13
+[s S2492 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
+[u S2495 . 4 `l 1 i 4 0 `d 1 f 4 0 `S2487 1 fAsBytes 4 0 `S2492 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S2495  1 a 4 34 ]
+"12
+[v ___flmul@grs grs `ul  1 a 4 29 ]
+[s S2564 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S2567 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S2564 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S2567  1 a 2 38 ]
+"10
+[v ___flmul@bexp bexp `uc  1 a 1 33 ]
+"11
+[v ___flmul@aexp aexp `uc  1 a 1 28 ]
+"9
+[v ___flmul@sign sign `uc  1 a 1 27 ]
+"8
+[v ___flmul@b b `d  1 p 4 14 ]
+[v ___flmul@a a `d  1 p 4 18 ]
+"205
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+{
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v __Umul8_16@word_mpld word_mpld `ui  1 a 2 6 ]
+"5
+[v __Umul8_16@product product `ui  1 a 2 4 ]
+"4
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
+[v __Umul8_16@multiplicand multiplicand `uc  1 p 1 0 ]
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 8 ]
+"60
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 12 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 5 ]
+"20
+[v ___fldiv@new_exp new_exp `i  1 a 2 10 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 17 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 16 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 9 ]
+"8
+[v ___fldiv@a a `d  1 p 4 68 ]
+[v ___fldiv@b b `d  1 p 4 72 ]
+"185
+} 0
+"43 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 49 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 48 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 40 ]
+"70
+} 0
+"131 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\mcc_generated_files/adcc/src/adcc.c
+[v _ADCC_GetSingleConversion ADCC_GetSingleConversion `(us  1 e 2 0 ]
+{
+[v ADCC_GetSingleConversion@channel channel `E8603  1 a 1 wreg ]
+[v ADCC_GetSingleConversion@channel channel `E8603  1 a 1 wreg ]
+"134
+[v ADCC_GetSingleConversion@channel channel `E8603  1 a 1 2 ]
+"153
+} 0
+"171 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\main.c
+[v _GetCapturedTimePeriod GetCapturedTimePeriod `(ul  1 s 4 GetCapturedTimePeriod ]
+{
+"173
+[v GetCapturedTimePeriod@tmr1TotalCount tmr1TotalCount `ul  1 a 4 20 ]
+"174
+[v GetCapturedTimePeriod@capturedTimePeriod capturedTimePeriod `ul  1 a 4 16 ]
+"176
+[v GetCapturedTimePeriod@CCP_captureCount CCP_captureCount `us  1 a 2 14 ]
+"175
+[v GetCapturedTimePeriod@TMR1_overflowCount TMR1_overflowCount `uc  1 a 1 24 ]
+"195
+} 0
+"207
+[v _TMR1_ResetOverflowCount TMR1_ResetOverflowCount `(v  1 s 1 TMR1_ResetOverflowCount ]
+{
+"210
+} 0
+"202
+[v _TMR1_GetOverflowCount TMR1_GetOverflowCount `(uc  1 s 1 TMR1_GetOverflowCount ]
+{
+"205
+} 0
+"212
+[v _CCP1_ResetCapturedCount CCP1_ResetCapturedCount `(v  1 s 1 CCP1_ResetCapturedCount ]
+{
+"215
+} 0
+"197
+[v _CCP1_GetCapturedCount CCP1_GetCapturedCount `(us  1 s 2 CCP1_GetCapturedCount ]
+{
+"200
+} 0
+"217
+[v _GetCapturedFrequency GetCapturedFrequency `(ul  1 s 4 GetCapturedFrequency ]
+{
+"219
+[v GetCapturedFrequency@fq fq `ul  1 a 4 26 ]
+"217
+[v GetCapturedFrequency@capturedTimeIn_us capturedTimeIn_us `ul  1 p 4 14 ]
+"226
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"10
+[v ___lldiv@quotient quotient `ul  1 a 4 9 ]
+"11
+[v ___lldiv@counter counter `uc  1 a 1 13 ]
+"5
+[v ___lldiv@divisor divisor `ul  1 p 4 0 ]
+[v ___lldiv@dividend dividend `ul  1 p 4 4 ]
+"30
+} 0
+"59 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\mcc_generated_files/system/src/interrupt.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+{
+"93
+} 0
+"154 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\mcc_generated_files/timer/src/tmr1.c
+[v _Timer1_OverflowISR Timer1_OverflowISR `(v  1 e 1 0 ]
+{
+"165
+} 0
+"106 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\mcc_generated_files/timer/src/tmr0.c
+[v _Timer0_OverflowISR Timer0_OverflowISR `(v  1 e 1 0 ]
+{
+"114
+} 0
+"305 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\main.c
+[v _TMR0_UserOverflowCallback TMR0_UserOverflowCallback `(v  1 s 1 TMR0_UserOverflowCallback ]
+{
+"308
+} 0
+"300
+[v _TMR1_UserOverflowCallback TMR1_UserOverflowCallback `(v  1 s 1 TMR1_UserOverflowCallback ]
+{
+"303
+} 0
+"121 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\mcc_generated_files/timer/src/tmr0.c
+[v _Timer0_DefaultOverflowCallback Timer0_DefaultOverflowCallback `(v  1 s 1 Timer0_DefaultOverflowCallback ]
+{
+"125
+} 0
+"172 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\mcc_generated_files/timer/src/tmr1.c
+[v _Timer1_DefaultOverflowCallback Timer1_DefaultOverflowCallback `(v  1 s 1 Timer1_DefaultOverflowCallback ]
+{
+"176
+} 0
+"118 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\mcc_generated_files/system/src/pins.c
+[v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
+{
+"120
+} 0
+"267 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\mcc_generated_files/uart/src/eusart1.c
+[v _EUSART1_ReceiveISR EUSART1_ReceiveISR `(v  1 e 1 0 ]
+{
+"270
+[v EUSART1_ReceiveISR@tempRxHead tempRxHead `uc  1 a 1 5 ]
+"269
+[v EUSART1_ReceiveISR@regValue regValue `uc  1 a 1 4 ]
+"305
+} 0
+"329
+[v _EUSART1_DefaultOverrunErrorCallback EUSART1_DefaultOverrunErrorCallback `(v  1 s 1 EUSART1_DefaultOverrunErrorCallback ]
+{
+"334
+} 0
+"324
+[v _EUSART1_DefaultFramingErrorCallback EUSART1_DefaultFramingErrorCallback `(v  1 s 1 EUSART1_DefaultFramingErrorCallback ]
+{
+"327
+} 0
+"85 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\mcc_generated_files/capture/src/ccp1.c
+[v _CCP1_CaptureISR CCP1_CaptureISR `(v  1 e 1 0 ]
+{
+[s S497 . 2 `uc 1 ccpr1l 1 0 `uc 1 ccpr1h 1 1 ]
+"87
+[s S500 . 2 `us 1 ccpr1_16Bit 2 0 ]
+[u S502 CCPR1Reg_tag 2 `S497 1 . 2 0 `S500 1 . 2 0 ]
+[v CCP1_CaptureISR@module module `S502  1 a 2 4 ]
+"98
+} 0
+"52
+[v _CCP1_DefaultCallBack CCP1_DefaultCallBack `(v  1 s 1 CCP1_DefaultCallBack ]
+{
+"54
+} 0
+"291 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\main.c
+[v _CCP1_UserCallBack CCP1_UserCallBack `(v  1 s 1 CCP1_UserCallBack ]
+{
+[v CCP1_UserCallBack@capturedValue capturedValue `us  1 p 2 2 ]
+"298
+} 0
+"112 C:\Users\direc\Desktop\PIC\pic16f17146-tds-meter.X\mcc_generated_files/timer/src/tmr1.c
+[v _Timer1_Write Timer1_Write `(v  1 e 1 0 ]
+{
+[v Timer1_Write@timerVal timerVal `ui  1 p 2 0 ]
+"132
+} 0

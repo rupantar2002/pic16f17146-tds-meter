@@ -24,14 +24,14 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=pic16f17146-tds-meter.X
+PROJECTNAME=pic16f17146-water-tds-measurement-mplab-mcc.X
 
 # Active Configuration
-DEFAULTCONF=default
+DEFAULTCONF=free
 CONF=${DEFAULTCONF}
 
 # All Configurations
-ALLCONFS=default 
+ALLCONFS=free pro 
 
 
 # build
@@ -45,13 +45,15 @@ ALLCONFS=default
 
 # clobber
 .clobber-impl: .clobber-pre .depcheck-impl
-	    ${MAKE} SUBPROJECTS=${SUBPROJECTS} CONF=default clean
+	    ${MAKE} SUBPROJECTS=${SUBPROJECTS} CONF=free clean
+	    ${MAKE} SUBPROJECTS=${SUBPROJECTS} CONF=pro clean
 
 
 
 # all
 .all-impl: .all-pre .depcheck-impl
-	    ${MAKE} SUBPROJECTS=${SUBPROJECTS} CONF=default build
+	    ${MAKE} SUBPROJECTS=${SUBPROJECTS} CONF=free build
+	    ${MAKE} SUBPROJECTS=${SUBPROJECTS} CONF=pro build
 
 
 

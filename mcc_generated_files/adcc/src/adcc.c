@@ -10,7 +10,7 @@
  * @version ADCC Driver Version 1.0.1
 */
 /*
-© [2023] Microchip Technology Inc. and its subsidiaries.
+© [2022] Microchip Technology Inc. and its subsidiaries.
 
     Subject to your compliance with these terms, you may use Microchip 
     software and any derivatives exclusively with Microchip products. 
@@ -59,14 +59,14 @@ void ADCC_Initialize(void)
     ADSTPTH = 0x0;
     //ADACCU 0x0; 
     ADACCU = 0x0;
-    //ADRPT 0; 
-    ADRPT = 0x0;
+    //ADRPT 16; 
+    ADRPT = 0x10;
     //ADCHS ANA0; 
     ADPCH = 0x0;
     //ADCHS ANA0; 
     ADNCH = 0x0;
-    //ADACQL 0; 
-    ADACQL = 0x0;
+    //ADACQL 100; 
+    ADACQL = 0x64;
     //ADACQH 0; 
     ADACQH = 0x0;
     //ADCAP Additional uC disabled; 
@@ -83,8 +83,8 @@ void ADCC_Initialize(void)
     ADCG1C = 0x0;
     //ADDSEN disabled; ADPCSC internal sampling capacitor and ext i/o pin; ADGPOL digital_low; ADIPEN disabled; ADPPOL Vss; 
     ADCON1 = 0x0;
-    //ADMD Basic_mode; ADACLR disabled; ADCRS 1; ADPSIS RES; 
-    ADCON2 = 0x10;
+    //ADMD Basic_mode; ADACLR disabled; ADCRS 4; ADPSIS RES; 
+    ADCON2 = 0x40;
     //ADTMD disabled; ADSOI ADGO not cleared; ADCALC First derivative of Single measurement; 
     ADCON3 = 0x0;
     //ADMATH registers not updated; 
@@ -93,8 +93,8 @@ void ADCC_Initialize(void)
     ADREF = 0x0;
     //ADACT disabled; 
     ADACT = 0x0;
-    //ADCCS FOSC/2; 
-    ADCLK = 0x0;
+    //ADCCS FOSC/4; 
+    ADCLK = 0x1;
     //GO_nDONE undefined; ADIC single-ended mode; ADFM right justified; ADCS ADCRC; ADCONT disabled; ADON enabled; 
     ADCON0 = 0x94;
     
@@ -110,16 +110,16 @@ void ADCC_StartConversion(adcc_channel_t channel)
     ADPCH = channel;
   
     // Turn on the ADC module
-    ADCON0bits.ON = 1;
+    ADCON0bits.ADON = 1;
 
     // Start the conversion
-    ADCON0bits.GO = 1;
+    ADCON0bits.ADGO = 1;
 }
 
 bool ADCC_IsConversionDone(void)
 {
     // Start the conversion
-    return ((unsigned char)(!ADCON0bits.GO));
+    return ((unsigned char)(!ADCON0bits.ADGO));
 }
 
 adc_result_t ADCC_GetConversionResult(void)
@@ -134,17 +134,17 @@ adc_result_t ADCC_GetSingleConversion(adcc_channel_t channel)
     ADPCH = channel;  
 
     // Turn on the ADC module
-    ADCON0bits.ON = 1;
+    ADCON0bits.ADON = 1;
     
     //Disable the continuous mode.
-    ADCON0bits.CONT = 0;
+    ADCON0bits.ADCONT = 0;
 
     // Start the conversion
-    ADCON0bits.GO = 1;
+    ADCON0bits.ADGO = 1;
 
 
     // Wait for the conversion to finish
-    while (ADCON0bits.GO)
+    while (ADCON0bits.ADGO)
     {
     }
     
@@ -155,7 +155,7 @@ adc_result_t ADCC_GetSingleConversion(adcc_channel_t channel)
 inline void ADCC_StopConversion(void)
 {
     //Reset the ADGO bit.
-    ADCON0bits.GO = 0;
+    ADCON0bits.ADGO = 0;
 }
 
 inline void ADCC_SetStopOnInterrupt(void)
@@ -261,14 +261,14 @@ inline void ADCC_EnableDoubleSampling(void)
 
 inline void ADCC_EnableContinuousConversion(void)
 {
-    //Sets the ADCON0bits.CONT
-    ADCON0bits.CONT = 1;
+    //Sets the ADCON0bits.ADCONT
+    ADCON0bits.ADCONT = 1;
 }
 
 inline void ADCC_DisableContinuousConversion(void)
 {
-    //Resets the ADCON0bits.CONT
-    ADCON0bits.CONT = 0;
+    //Resets the ADCON0bits.ADCONT
+    ADCON0bits.ADCONT = 0;
 }
 
 bool ADCC_HasErrorCrossedUpperThreshold(void)

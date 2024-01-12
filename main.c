@@ -40,15 +40,14 @@
 #define TIME_DIVISION_FACTOR             (TMR1_1_COUNT_PERIOD_DIVIDER * CCP_CAPTURING_nTH_EDGE) 
 #define TMR1_MAX_COUNT                   (65535U) // 16-bt timer
 #define MAX_TIME_CAPTURED                (690001U)
-#define TDS_MAX_RANGE                    (3000U)
-#define CALIBRATION_SALT_FACTOR          (0.5f) // user editable, 0.5 for NaCl, 0.71 for 422 and o.55 for KCl
+#define TDS_MAX_RANGE                    (2000U)
+#define CALIBRATION_SALT_FACTOR          (0.38F) // user editable, 0.5 for NaCl, 0.71 for 422 and o.55 for KCl
 #define RELAXATION_CKT_CONVERSION_FACTOR (0.14F) // conductivity = 1.4*C*Fq; = "0.14" * Fq as C is 0.1 uF
 #define TMR_OVERFLOW_COUNT_LIMIT         (34U) // for TDS value 1 or less then 1
 
 #define TEMPARATURE_MULTIPLIER           (0.01F) // need to update from TDS Probe datasheet
 #define MAX_ADC_COUNT                    (4096U)
 #define VDD                              (3.3F)
-//#define VDD                              (5.0F)
 #define TEMPARATURE_COEFFICIENT          (0.0217F) // 2.17%
 #define SERIES_RESISTANCE_NTC            (10U) // 10kOhm
 #define NOMINAL_TEMPERATURE_k            (298.15F) // room temperature
@@ -56,27 +55,16 @@
 #define NOMINAL_RESISTANCE_NTC           (10U) 
 #define B_NTC                            (3950U)
 
-
-#define BUFFER_SIZE 5
-
-typedef struct {
-    uint16_t values[BUFFER_SIZE];
-    uint32_t sum;
-    uint32_t count;
-    uint8_t index;
-} RunningAverage;
-
 volatile uint8_t TMR1_overflow = 0; // used in TMR1 ISR
 volatile bool TMR0_overflowFlag = false;
 volatile uint16_t CCP_capturedValue = 0; // used in CCP ISR
 volatile uint8_t TMR1_overflowValue = 0; // used for atomic value store in CCP ISR
 volatile bool ccpCapturedFqFlag = false;
 
-static uint32_t timePeriod = 0; // timePeriod to calculate TDS value
-static uint16_t tdsValue = 0;
-static uint16_t tdsProbeTemperature = 0;
-static uint32_t capturedFq;
-
+uint32_t timePeriod = 0; // timePeriod to calculate TDS value
+uint16_t tdsValue = 0;
+uint16_t tdsProbeTemperature = 0;
+uint16_t capturedFq;
 
 static void CCP1_UserCallBack(uint16_t capturedValue); // user call back function; called over CCP Interrupt
 static void TMR1_UserOverflowCallback(void); // user ISR ; called over TMR1 Interrupt
@@ -85,27 +73,17 @@ static uint8_t TMR1_GetOverflowCount(void);
 static uint16_t CCP1_GetCapturedCount(void);
 static uint32_t GetCapturedTimePeriod(void);
 static uint16_t GetTdsProbeTemperature(void);
-static uint32_t GetCapturedFrequency(uint32_t capturedTimeIn_us);
-static uint16_t GetWaterTDS(uint32_t capturedFq, uint16_t temperature);
+static uint16_t GetCapturedFrequency(uint32_t capturedTimeIn_us);
+static uint16_t GetWaterTDS(uint16_t capturedFq, uint16_t temperature);
 static float GetTempCompensatedConductivityValue(float conductivity, uint16_t temperature);
 static void CCP1_ResetCapturedCount(void);
 static void TMR1_ResetOverflowCount(void);
 
-// statistics
-void running_average_push(RunningAverage *ra, uint16_t value);
-uint16_t running_average_get(const RunningAverage *ra);
-
 /*
     Main application
 */
-
-void UartRxReceiveCallback(){
-}
-
 int main(void)
 {
-    RunningAverage runningAvg={0};
-    
     SYSTEM_Initialize();
     
     printf("\r \n Project Name: %s ",PROJECT_NAME);
@@ -137,8 +115,6 @@ int main(void)
             ccpCapturedFqFlag = false;
             timePeriod = GetCapturedTimePeriod();
             capturedFq = GetCapturedFrequency(timePeriod);
-//            printf("timePeriod->%d \r\n",timePeriod);
-//            printf("capturedFq->%d\r\n",capturedFq);
         }
         if (TMR0_overflowFlag)
         {
@@ -147,9 +123,6 @@ int main(void)
             tdsProbeTemperature = GetTdsProbeTemperature();
             tdsValue = GetWaterTDS(capturedFq, tdsProbeTemperature);
             capturedFq = 0;
-            
-//            printf("tdsProbeTemperature->%d tdsValue->%d\r\n",tdsProbeTemperature,tdsValue);
-             
                  
             if (tdsValue == 0)
             {
@@ -214,14 +187,13 @@ static void CCP1_ResetCapturedCount(void)
     CCP_capturedValue = 0;
 }
 
-static uint32_t GetCapturedFrequency(uint32_t capturedTimeIn_us)
+static uint16_t GetCapturedFrequency(uint32_t capturedTimeIn_us)
 {
-    uint32_t fq = 0;
-    fq = (uint32_t) (1000000 / capturedTimeIn_us);
-//    printf("fq before comp->%d\r\n",fq);
-    //fq = fq + (fq >> 4); // Multiplier by 1.25 for compensation
+    uint16_t fq = 0;
+
+    fq = (uint16_t) (1000000 / capturedTimeIn_us);
     fq = fq + (fq >> 4); // Multiplier by 1.25 for compensation
-    //printf("fq after comp->%d\r\n",fq);
+
     return fq;
 }
 
@@ -230,7 +202,7 @@ static uint16_t GetTdsProbeTemperature(void)
     uint16_t adcCount = 0;
     float probeTemperature = 0;
 
-    adcCount = ADCC_GetSingleConversion(channel_ANC5);
+    adcCount = ADCC_GetSingleConversion(channel_Temperature);
 
     probeTemperature = adcCount * (VDD / MAX_ADC_COUNT); // convert ADC count to equivalent voltage
     probeTemperature = (probeTemperature * SERIES_RESISTANCE_NTC) / (VDD - probeTemperature); // convert voltage into resistance
@@ -243,7 +215,7 @@ static uint16_t GetTdsProbeTemperature(void)
     return (uint16_t) probeTemperature;
 }
 
-static uint16_t GetWaterTDS(uint32_t capturedFq, uint16_t temperature)
+static uint16_t GetWaterTDS(uint16_t capturedFq, uint16_t temperature)
 {
     float conductivity = 0.0;
     uint16_t waterTDS = 0;
@@ -251,7 +223,7 @@ static uint16_t GetWaterTDS(uint32_t capturedFq, uint16_t temperature)
     conductivity = (RELAXATION_CKT_CONVERSION_FACTOR * capturedFq);
     conductivity = GetTempCompensatedConductivityValue(conductivity, temperature);
     
-    waterTDS = (uint16_t) (CALIBRATION_SALT_FACTOR * conductivity *0.35f);
+    waterTDS = (uint16_t) (CALIBRATION_SALT_FACTOR * conductivity);
 
     return waterTDS;
 }
@@ -267,26 +239,6 @@ static float GetTempCompensatedConductivityValue(float conductivity, uint16_t te
      */
     return (conductivity * (1.0F + TEMPARATURE_COEFFICIENT * ((int16_t)temperature - NOMINAL_TEMPERATURE_c)));
 }
-
-/*================== Statistics =========================*/
-
-void running_average_push(RunningAverage *ra, uint16_t value) {
-    ra->sum += value;
-    ra->count++;
-    ra->values[ra->index] = value;
-    ra->index = (ra->index + 1) % BUFFER_SIZE;
-    if (ra->count > BUFFER_SIZE) {
-        ra->sum -= ra->values[(ra->index + BUFFER_SIZE - 1) % BUFFER_SIZE];
-        ra->count = BUFFER_SIZE;
-    }
-}
-
-uint16_t running_average_get(const RunningAverage *ra) {
-    return (uint16_t)(ra->sum / ra->count);
-}
-
-
-/*====================== Callbacks&ISRs===================*/
 
 static void CCP1_UserCallBack(uint16_t capturedValue)
 {

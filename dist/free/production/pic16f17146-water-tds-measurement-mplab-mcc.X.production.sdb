@@ -1,0 +1,1516 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F17146 ]
+[d frameptr 6 ]
+"107 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\mcc_generated_files/adcc/src/adcc.c
+[e E8603 . `uc
+channel_ADCG1 3
+channel_OPA1OUT 57
+channel_VSS 58
+channel_Temp 59
+channel_DAC1OUT 60
+channel_DAC2OUT 61
+channel_FVR_Buffer1 62
+channel_FVR_Buffer2 63
+channel_Temperature 21
+]
+"85 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\mcc_generated_files/opa/src/opa1.c
+[e E8611 . `uc
+OPA1_posChannel_Vss 0
+OPA1_posChannel_GSEL 1
+OPA1_posChannel_OPA1IN 2
+OPA1_posChannel_Vdd_by_2 3
+OPA1_posChannel_DAC1 4
+OPA1_posChannel_DAC2 5
+]
+"90
+[e E8619 . `uc
+OPA1_RB5_IN0_pos 0
+OPA1_RC3_IN1_pos 1
+OPA1_RA2_IN2_pos 2
+OPA1_RA0_IN3_pos 3
+]
+"95
+[e E8625 . `uc
+OPA1_negChannel_No_Connection 0
+OPA1_negChannel_GSEL 1
+OPA1_negChannel_OPA1IN 2
+OPA1_negChannel_DAC1 4
+OPA1_negChannel_DAC2 5
+]
+"100
+[e E8632 . `uc
+OPA1_RB4_IN0_neg 0
+OPA1_RC3_IN1_neg 1
+OPA1_RA2_IN2_neg 2
+OPA1_RA0_IN3_neg 3
+OPA1_Vss 7
+]
+"105
+[e E8601 . `uc
+OPA1_R2byR1_is_0dp07 0
+OPA1_R2byR1_is_0dp14 1
+OPA1_R2byR1_is_0dp33 2
+OPA1_R2byR1_is_1 3
+OPA1_R2byR1_is_1dp67 4
+OPA1_R2byR1_is_3 5
+OPA1_R2byR1_is_7 6
+OPA1_R2byR1_is_15 7
+]
+"47 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\mcc_generated_files/uart/src/eusart1.c
+[e E9130 UART_STANDARD_BAUDS `uc
+UART_110 0
+UART_300 1
+UART_600 2
+UART_1200 3
+UART_2400 4
+UART_4800 5
+UART_9600 6
+UART_14400 7
+UART_19200 8
+UART_38400 9
+UART_57600 10
+UART_115200 11
+UART_230400 12
+UART_460800 13
+UART_921600 14
+]
+"205 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\main.c
+[e E8927 . `uc
+channel_ADCG1 3
+channel_OPA1OUT 57
+channel_VSS 58
+channel_Temp 59
+channel_DAC1OUT 60
+channel_DAC2OUT 61
+channel_FVR_Buffer1 62
+channel_FVR_Buffer2 63
+channel_Temperature 21
+]
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"152 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+[v _pad pad `(v  1 s 1 pad ]
+"862
+[v _stoa stoa `(v  1 s 1 stoa ]
+"917
+[v _utoa utoa `(v  1 s 1 utoa ]
+"1048
+[v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
+"1546
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+"43 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"29 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\logf.c
+[v _logf logf `(f  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\printf.c
+[v _printf printf `(i  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"242
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"3 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\strncmp.c
+[v _strncmp strncmp `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"85 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\main.c
+[v _main main `(i  1 e 2 0 ]
+"144
+[v _GetCapturedTimePeriod GetCapturedTimePeriod `(ul  1 s 4 GetCapturedTimePeriod ]
+"170
+[v _CCP1_GetCapturedCount CCP1_GetCapturedCount `(us  1 s 2 CCP1_GetCapturedCount ]
+"175
+[v _TMR1_GetOverflowCount TMR1_GetOverflowCount `(uc  1 s 1 TMR1_GetOverflowCount ]
+"180
+[v _TMR1_ResetOverflowCount TMR1_ResetOverflowCount `(v  1 s 1 TMR1_ResetOverflowCount ]
+"185
+[v _CCP1_ResetCapturedCount CCP1_ResetCapturedCount `(v  1 s 1 CCP1_ResetCapturedCount ]
+"190
+[v _GetCapturedFrequency GetCapturedFrequency `(us  1 s 2 GetCapturedFrequency ]
+"200
+[v _GetTdsProbeTemperature GetTdsProbeTemperature `(us  1 s 2 GetTdsProbeTemperature ]
+"218
+[v _GetWaterTDS GetWaterTDS `(us  1 s 2 GetWaterTDS ]
+"231
+[v _GetTempCompensatedConductivityValue GetTempCompensatedConductivityValue `(f  1 s 4 GetTempCompensatedConductivityValue ]
+"243
+[v _CCP1_UserCallBack CCP1_UserCallBack `(v  1 s 1 CCP1_UserCallBack ]
+"252
+[v _TMR1_UserOverflowCallback TMR1_UserOverflowCallback `(v  1 s 1 TMR1_UserOverflowCallback ]
+"257
+[v _TMR0_UserOverflowCallback TMR0_UserOverflowCallback `(v  1 s 1 TMR0_UserOverflowCallback ]
+"45 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\mcc_generated_files/adcc/src/adcc.c
+[v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
+"131
+[v _ADCC_GetSingleConversion ADCC_GetSingleConversion `(us  1 e 2 0 ]
+"56 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\mcc_generated_files/capture/src/ccp1.c
+[v _CCP1_DefaultCallBack CCP1_DefaultCallBack `(v  1 s 1 CCP1_DefaultCallBack ]
+"60
+[v _CCP1_Initialize CCP1_Initialize `(v  1 e 1 0 ]
+"86
+[v _CCP1_CaptureISR CCP1_CaptureISR `(v  1 e 1 0 ]
+"101
+[v _CCP1_SetCallBack CCP1_SetCallBack `(v  1 e 1 0 ]
+"44 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\mcc_generated_files/opa/src/opa1.c
+[v _OPA1_Initialize OPA1_Initialize `(v  1 e 1 0 ]
+"37 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\mcc_generated_files/system/src/clock.c
+[v _CLOCK_Initialize CLOCK_Initialize `(v  1 e 1 0 ]
+"40 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\mcc_generated_files/system/src/interrupt.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+"59
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+"101
+[v _INT_CallBack INT_CallBack `(v  1 e 1 0 ]
+"110
+[v _INT_SetInterruptHandler INT_SetInterruptHandler `(v  1 e 1 0 ]
+"114
+[v _INT_DefaultInterruptHandler INT_DefaultInterruptHandler `(v  1 e 1 0 ]
+"38 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\mcc_generated_files/system/src/pins.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"116
+[v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
+"43 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\mcc_generated_files/system/src/system.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"49 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\mcc_generated_files/timer/src/tmr0.c
+[v _Timer0_Initialize Timer0_Initialize `(v  1 e 1 0 ]
+"74
+[v _Timer0_Start Timer0_Start `(v  1 e 1 0 ]
+"79
+[v _Timer0_Stop Timer0_Stop `(v  1 e 1 0 ]
+"94
+[v _Timer0_Write Timer0_Write `(v  1 e 1 0 ]
+"106
+[v _Timer0_OverflowISR Timer0_OverflowISR `(v  1 e 1 0 ]
+"116
+[v _Timer0_OverflowCallbackRegister Timer0_OverflowCallbackRegister `(v  1 e 1 0 ]
+"121
+[v _Timer0_DefaultOverflowCallback Timer0_DefaultOverflowCallback `(v  1 s 1 Timer0_DefaultOverflowCallback ]
+"57 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\mcc_generated_files/timer/src/tmr1.c
+[v _Timer1_Initialize Timer1_Initialize `(v  1 e 1 0 ]
+"87
+[v _Timer1_Start Timer1_Start `(v  1 e 1 0 ]
+"93
+[v _Timer1_Stop Timer1_Stop `(v  1 e 1 0 ]
+"114
+[v _Timer1_Write Timer1_Write `(v  1 e 1 0 ]
+"151
+[v _Timer1_OverflowISR Timer1_OverflowISR `(v  1 e 1 0 ]
+"164
+[v _Timer1_OverflowCallbackRegister Timer1_OverflowCallbackRegister `(v  1 e 1 0 ]
+"169
+[v _Timer1_DefaultOverflowCallback Timer1_DefaultOverflowCallback `(v  1 s 1 Timer1_DefaultOverflowCallback ]
+"93 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\mcc_generated_files/uart/src/eusart1.c
+[v _EUSART1_Initialize EUSART1_Initialize `(v  1 e 1 0 ]
+"114
+[v _EUSART1_Deinitialize EUSART1_Deinitialize `(v  1 e 1 0 ]
+"134
+[v _EUSART1_TransmitEnable EUSART1_TransmitEnable `T(v  1 e 1 0 ]
+"139
+[v _EUSART1_TransmitDisable EUSART1_TransmitDisable `T(v  1 e 1 0 ]
+"154
+[v _EUSART1_IsRxReady EUSART1_IsRxReady `(a  1 e 1 0 ]
+"159
+[v _EUSART1_IsTxReady EUSART1_IsTxReady `(a  1 e 1 0 ]
+"164
+[v _EUSART1_IsTxDone EUSART1_IsTxDone `(a  1 e 1 0 ]
+"169
+[v _EUSART1_ErrorGet EUSART1_ErrorGet `(ui  1 e 2 0 ]
+"174
+[v _EUSART1_Read EUSART1_Read `(uc  1 e 1 0 ]
+"196
+[v _EUSART1_Write EUSART1_Write `(v  1 e 1 0 ]
+"207
+[v _putch putch `(v  1 e 1 0 ]
+"213
+[v _EUSART1_DefaultFramingErrorCallback EUSART1_DefaultFramingErrorCallback `(v  1 s 1 EUSART1_DefaultFramingErrorCallback ]
+"218
+[v _EUSART1_DefaultOverrunErrorCallback EUSART1_DefaultOverrunErrorCallback `(v  1 s 1 EUSART1_DefaultOverrunErrorCallback ]
+"225
+[v _EUSART1_FramingErrorCallbackRegister EUSART1_FramingErrorCallbackRegister `(v  1 e 1 0 ]
+"233
+[v _EUSART1_OverrunErrorCallbackRegister EUSART1_OverrunErrorCallbackRegister `(v  1 e 1 0 ]
+[s S909 . 1 `uc 1 INTEDG 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"427 C:/Users/direc/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.13.178/xc8\pic\include\proc\pic16f17146.h
+[u S914 . 1 `S909 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES914  1 e 1 @11 ]
+"598
+[v _TRISA TRISA `VEuc  1 e 1 @18 ]
+"643
+[v _TRISB TRISB `VEuc  1 e 1 @19 ]
+"682
+[v _TRISC TRISC `VEuc  1 e 1 @20 ]
+"744
+[v _LATA LATA `VEuc  1 e 1 @24 ]
+"789
+[v _LATB LATB `VEuc  1 e 1 @25 ]
+"828
+[v _LATC LATC `VEuc  1 e 1 @26 ]
+[s S896 . 1 `uc 1 INTF 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 IOCIF 1 0 :1:4 
+`uc 1 TMR0IF 1 0 :1:5 
+]
+"903
+[u S901 . 1 `S896 1 . 1 0 ]
+[v _PIR0bits PIR0bits `VES901  1 e 1 @140 ]
+[s S970 . 1 `uc 1 NVMIF 1 0 :1:0 
+`uc 1 CRCIF 1 0 :1:1 
+`uc 1 SCANIF 1 0 :1:2 
+`uc 1 ACTIF 1 0 :1:3 
+`uc 1 CSWIF 1 0 :1:4 
+`uc 1 OSFIF 1 0 :1:5 
+`uc 1 TMR1IF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"940
+[u S979 . 1 `S970 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES979  1 e 1 @141 ]
+[s S450 . 1 `uc 1 TMR3IF 1 0 :1:0 
+`uc 1 TMR3GIF 1 0 :1:1 
+`uc 1 TMR2IF 1 0 :1:2 
+`uc 1 TMR4IF 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 CCP1IF 1 0 :1:5 
+`uc 1 CCP2IF 1 0 :1:6 
+]
+"1001
+[u S458 . 1 `S450 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES458  1 e 1 @142 ]
+[s S1748 . 1 `uc 1 NCO1IF 1 0 :1:0 
+`uc 1 CWG1IF 1 0 :1:1 
+`uc 1 CLC1IF 1 0 :1:2 
+`uc 1 CLC2IF 1 0 :1:3 
+`uc 1 CLC3IF 1 0 :1:4 
+`uc 1 CLC4IF 1 0 :1:5 
+`uc 1 TX1IF 1 0 :1:6 
+`uc 1 RC1IF 1 0 :1:7 
+]
+"1091
+[u S1757 . 1 `S1748 1 . 1 0 ]
+[v _PIR4bits PIR4bits `VES1757  1 e 1 @144 ]
+[s S48 . 1 `uc 1 ADIF 1 0 :1:0 
+`uc 1 ADTIF 1 0 :1:1 
+`uc 1 ZCDIF 1 0 :1:2 
+]
+"1210
+[u S52 . 1 `S48 1 . 1 0 ]
+[v _PIR6bits PIR6bits `VES52  1 e 1 @146 ]
+[s S932 . 1 `uc 1 INTE 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 IOCIE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+"1243
+[u S937 . 1 `S932 1 . 1 0 ]
+[v _PIE0bits PIE0bits `VES937  1 e 1 @150 ]
+[s S949 . 1 `uc 1 NVMIE 1 0 :1:0 
+`uc 1 CRCIE 1 0 :1:1 
+`uc 1 SCANIE 1 0 :1:2 
+`uc 1 ACTIE 1 0 :1:3 
+`uc 1 CSWIE 1 0 :1:4 
+`uc 1 OSFIE 1 0 :1:5 
+`uc 1 TMR1IE 1 0 :1:6 
+`uc 1 TMR1GIE 1 0 :1:7 
+]
+"1280
+[u S958 . 1 `S949 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES958  1 e 1 @151 ]
+[s S469 . 1 `uc 1 TMR3IE 1 0 :1:0 
+`uc 1 TMR3GIE 1 0 :1:1 
+`uc 1 TMR2IE 1 0 :1:2 
+`uc 1 TMR4IE 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 CCP1IE 1 0 :1:5 
+`uc 1 CCP2IE 1 0 :1:6 
+]
+"1341
+[u S477 . 1 `S469 1 . 1 0 ]
+[v _PIE2bits PIE2bits `VES477  1 e 1 @152 ]
+"2447
+[v _TMR0L TMR0L `VEuc  1 e 1 @412 ]
+"2585
+[v _TMR0H TMR0H `VEuc  1 e 1 @413 ]
+"2839
+[v _T0CON0 T0CON0 `VEuc  1 e 1 @414 ]
+[s S1430 . 1 `uc 1 OUTPS 1 0 :4:0 
+`uc 1 MD16 1 0 :1:4 
+`uc 1 OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 EN 1 0 :1:7 
+]
+"2867
+[s S1436 . 1 `uc 1 T0OUTPS 1 0 :4:0 
+`uc 1 T0MD16 1 0 :1:4 
+`uc 1 T0OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 T0EN 1 0 :1:7 
+]
+[s S1442 . 1 `uc 1 OUTPS0 1 0 :1:0 
+`uc 1 OUTPS1 1 0 :1:1 
+`uc 1 OUTPS2 1 0 :1:2 
+`uc 1 OUTPS3 1 0 :1:3 
+`uc 1 T016BIT 1 0 :1:4 
+]
+[u S1448 . 1 `S1430 1 . 1 0 `S1436 1 . 1 0 `S1442 1 . 1 0 ]
+[v _T0CON0bits T0CON0bits `VES1448  1 e 1 @414 ]
+"2937
+[v _T0CON1 T0CON1 `VEuc  1 e 1 @415 ]
+"3358
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @653 ]
+"3498
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @655 ]
+"3600
+[v _OSCEN OSCEN `VEuc  1 e 1 @657 ]
+"3657
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @658 ]
+"3715
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @659 ]
+"3755
+[v _ACTCON ACTCON `VEuc  1 e 1 @660 ]
+"3979
+[v _TMR1L TMR1L `VEuc  1 e 1 @780 ]
+"4149
+[v _TMR1H TMR1H `VEuc  1 e 1 @781 ]
+"4269
+[v _T1CON T1CON `VEuc  1 e 1 @782 ]
+[s S1225 . 1 `uc 1 ON 1 0 :1:0 
+`uc 1 RD16 1 0 :1:1 
+`uc 1 nSYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 CKPS 1 0 :2:4 
+]
+"4300
+[s S1231 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 T1RD16 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+]
+[s S1238 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 CKPS0 1 0 :1:4 
+`uc 1 CKPS1 1 0 :1:5 
+]
+[s S1242 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RD161 1 0 :1:1 
+]
+[u S1245 . 1 `S1225 1 . 1 0 `S1231 1 . 1 0 `S1238 1 . 1 0 `S1242 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES1245  1 e 1 @782 ]
+"4365
+[v _T1GCON T1GCON `VEuc  1 e 1 @783 ]
+[s S1271 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 GVAL 1 0 :1:2 
+`uc 1 GGO_nDONE 1 0 :1:3 
+`uc 1 GSPM 1 0 :1:4 
+`uc 1 GTM 1 0 :1:5 
+`uc 1 GPOL 1 0 :1:6 
+`uc 1 GE 1 0 :1:7 
+]
+"4399
+[s S1279 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T1GVAL 1 0 :1:2 
+`uc 1 T1GGO_nDONE 1 0 :1:3 
+`uc 1 T1GSPM 1 0 :1:4 
+`uc 1 T1GTM 1 0 :1:5 
+`uc 1 T1GPOL 1 0 :1:6 
+`uc 1 T1GE 1 0 :1:7 
+]
+[s S1287 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T1GGO 1 0 :1:3 
+]
+[u S1290 . 1 `S1271 1 . 1 0 `S1279 1 . 1 0 `S1287 1 . 1 0 ]
+[v _T1GCONbits T1GCONbits `VES1290  1 e 1 @783 ]
+"4561
+[v _T1GATE T1GATE `VEuc  1 e 1 @784 ]
+"4727
+[v _T1CLK T1CLK `VEuc  1 e 1 @785 ]
+"7109
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @1036 ]
+"7129
+[v _CCPR1H CCPR1H `VEuc  1 e 1 @1037 ]
+"7149
+[v _CCP1CON CCP1CON `VEuc  1 e 1 @1038 ]
+"7276
+[v _CCP1CAP CCP1CAP `VEuc  1 e 1 @1039 ]
+"11241
+[v _RC1REG RC1REG `VEuc  1 e 1 @1804 ]
+"11261
+[v _TX1REG TX1REG `VEuc  1 e 1 @1805 ]
+"11288
+[v _SP1BRGL SP1BRGL `VEuc  1 e 1 @1806 ]
+"11308
+[v _SP1BRGH SP1BRGH `VEuc  1 e 1 @1807 ]
+"11328
+[v _RC1STA RC1STA `VEuc  1 e 1 @1808 ]
+[s S1706 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"11345
+[u S1715 . 1 `S1706 1 . 1 0 ]
+[v _RC1STAbits RC1STAbits `VES1715  1 e 1 @1808 ]
+"11390
+[v _TX1STA TX1STA `VEuc  1 e 1 @1809 ]
+[s S1727 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"11407
+[u S1736 . 1 `S1727 1 . 1 0 ]
+[v _TX1STAbits TX1STAbits `VES1736  1 e 1 @1809 ]
+"11452
+[v _BAUD1CON BAUD1CON `VEuc  1 e 1 @1810 ]
+"14383
+[v _OPA1CON0 OPA1CON0 `VEuc  1 e 1 @2316 ]
+[s S542 . 1 `uc 1 SOC 1 0 :3:0 
+`uc 1 UG 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 CPON 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 EN 1 0 :1:7 
+]
+"14417
+[s S549 . 1 `uc 1 SOC0 1 0 :1:0 
+`uc 1 SOC1 1 0 :1:1 
+`uc 1 SOC2 1 0 :1:2 
+`uc 1 UG0 1 0 :1:3 
+]
+[s S554 . 1 `uc 1 OPA1SOC 1 0 :3:0 
+`uc 1 OPA1UG 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 OPA1CPON 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 OPA1EN 1 0 :1:7 
+]
+[s S561 . 1 `uc 1 OPA1SOC0 1 0 :1:0 
+`uc 1 OPA1SOC1 1 0 :1:1 
+`uc 1 OPA1SOC2 1 0 :1:2 
+]
+[u S565 . 1 `S542 1 . 1 0 `S549 1 . 1 0 `S554 1 . 1 0 `S561 1 . 1 0 ]
+[v _OPA1CON0bits OPA1CON0bits `VES565  1 e 1 @2316 ]
+"14497
+[v _OPA1CON1 OPA1CON1 `VEuc  1 e 1 @2317 ]
+[s S718 . 1 `uc 1 NSS 1 0 :3:0 
+`uc 1 RESON 1 0 :1:3 
+`uc 1 GSEL 1 0 :3:4 
+]
+"14532
+[s S722 . 1 `uc 1 NSS0 1 0 :1:0 
+`uc 1 NSS1 1 0 :1:1 
+`uc 1 NSS2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 GSEL0 1 0 :1:4 
+`uc 1 GSEL1 1 0 :1:5 
+`uc 1 GSEL2 1 0 :1:6 
+]
+[s S730 . 1 `uc 1 OPA1NSS 1 0 :3:0 
+`uc 1 OPA1RESON 1 0 :1:3 
+`uc 1 OPA1GSEL 1 0 :3:4 
+]
+[s S734 . 1 `uc 1 OPA1NSS0 1 0 :1:0 
+`uc 1 OPA1NSS1 1 0 :1:1 
+`uc 1 OPA1NSS2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 OPA1GSEL0 1 0 :1:4 
+`uc 1 OPA1GSEL1 1 0 :1:5 
+`uc 1 OPA1GSEL2 1 0 :1:6 
+]
+[u S742 . 1 `S718 1 . 1 0 `S722 1 . 1 0 `S730 1 . 1 0 `S734 1 . 1 0 ]
+[v _OPA1CON1bits OPA1CON1bits `VES742  1 e 1 @2317 ]
+"14627
+[v _OPA1CON2 OPA1CON2 `VEuc  1 e 1 @2318 ]
+[s S601 . 1 `uc 1 PCH 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 NCH 1 0 :3:4 
+]
+"14662
+[s S605 . 1 `uc 1 PCH0 1 0 :1:0 
+`uc 1 PCH1 1 0 :1:1 
+`uc 1 PCH2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 NCH0 1 0 :1:4 
+`uc 1 NCH1 1 0 :1:5 
+`uc 1 NCH2 1 0 :1:6 
+]
+[s S613 . 1 `uc 1 OPA1PCH 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 OPA1NCH 1 0 :3:4 
+]
+[s S617 . 1 `uc 1 OPA1PCH0 1 0 :1:0 
+`uc 1 OPA1PCH1 1 0 :1:1 
+`uc 1 OPA1PCH2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 OPA1NCH0 1 0 :1:4 
+`uc 1 OPA1NCH1 1 0 :1:5 
+`uc 1 OPA1NCH2 1 0 :1:6 
+]
+[u S625 . 1 `S601 1 . 1 0 `S605 1 . 1 0 `S613 1 . 1 0 `S617 1 . 1 0 ]
+[v _OPA1CON2bits OPA1CON2bits `VES625  1 e 1 @2318 ]
+"14747
+[v _OPA1CON3 OPA1CON3 `VEuc  1 e 1 @2319 ]
+[s S660 . 1 `uc 1 PSS 1 0 :5:0 
+`uc 1 . 1 0 :1:5 
+`uc 1 FMS 1 0 :2:6 
+]
+"14778
+[s S664 . 1 `uc 1 PSS0 1 0 :1:0 
+`uc 1 PSS1 1 0 :1:1 
+`uc 1 . 1 0 :4:2 
+`uc 1 FMS0 1 0 :1:6 
+`uc 1 FMS1 1 0 :1:7 
+]
+[s S670 . 1 `uc 1 OPA1PSS 1 0 :5:0 
+`uc 1 . 1 0 :1:5 
+`uc 1 OPA1FMS 1 0 :2:6 
+]
+[s S674 . 1 `uc 1 OPA1PSS0 1 0 :1:0 
+`uc 1 OPA1PSS1 1 0 :1:1 
+`uc 1 . 1 0 :4:2 
+`uc 1 OPA1FMS0 1 0 :1:6 
+`uc 1 OPA1FMS1 1 0 :1:7 
+]
+[u S680 . 1 `S660 1 . 1 0 `S664 1 . 1 0 `S670 1 . 1 0 `S674 1 . 1 0 ]
+[v _OPA1CON3bits OPA1CON3bits `VES680  1 e 1 @2319 ]
+"14843
+[v _OPA1HWC OPA1HWC `VEuc  1 e 1 @2320 ]
+[s S781 . 1 `uc 1 HWCL 1 0 :3:0 
+`uc 1 ORPOL 1 0 :1:3 
+`uc 1 HWCH 1 0 :3:4 
+`uc 1 OREN 1 0 :1:7 
+]
+"14880
+[s S786 . 1 `uc 1 HWCL0 1 0 :1:0 
+`uc 1 HWCL1 1 0 :1:1 
+`uc 1 HWCL2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 HWCH0 1 0 :1:4 
+`uc 1 HWCH1 1 0 :1:5 
+`uc 1 HWCH2 1 0 :1:6 
+]
+[s S794 . 1 `uc 1 OPA1HWCL 1 0 :3:0 
+`uc 1 OPA1ORPOL 1 0 :1:3 
+`uc 1 OPA1HWCH 1 0 :3:4 
+`uc 1 OPA1OREN 1 0 :1:7 
+]
+[s S799 . 1 `uc 1 OPA1HWCL0 1 0 :1:0 
+`uc 1 OPA1HWCL1 1 0 :1:1 
+`uc 1 OPA1HWCL2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 OPA1HWCH0 1 0 :1:4 
+`uc 1 OPA1HWCH1 1 0 :1:5 
+`uc 1 OPA1HWCH2 1 0 :1:6 
+]
+[u S807 . 1 `S781 1 . 1 0 `S786 1 . 1 0 `S794 1 . 1 0 `S799 1 . 1 0 ]
+[v _OPA1HWCbits OPA1HWCbits `VES807  1 e 1 @2320 ]
+"14985
+[v _OPA1OFFSET OPA1OFFSET `VEuc  1 e 1 @2321 ]
+"15113
+[v _OPA1ORS OPA1ORS `VEuc  1 e 1 @2322 ]
+"17381
+[v _ADLTHL ADLTHL `VEuc  1 e 1 @7436 ]
+"17509
+[v _ADLTHH ADLTHH `VEuc  1 e 1 @7437 ]
+"17644
+[v _ADUTHL ADUTHL `VEuc  1 e 1 @7438 ]
+"17772
+[v _ADUTHH ADUTHH `VEuc  1 e 1 @7439 ]
+"17907
+[v _ADERRL ADERRL `VEuc  1 e 1 @7440 ]
+"18035
+[v _ADERRH ADERRH `VEuc  1 e 1 @7441 ]
+"18170
+[v _ADSTPTL ADSTPTL `VEuc  1 e 1 @7442 ]
+"18298
+[v _ADSTPTH ADSTPTH `VEuc  1 e 1 @7443 ]
+"18433
+[v _ADFLTRL ADFLTRL `VEuc  1 e 1 @7444 ]
+"18561
+[v _ADFLTRH ADFLTRH `VEuc  1 e 1 @7445 ]
+"18698
+[v _ADACCL ADACCL `VEuc  1 e 1 @7446 ]
+"18826
+[v _ADACCH ADACCH `VEuc  1 e 1 @7447 ]
+"18954
+[v _ADACCU ADACCU `VEuc  1 e 1 @7448 ]
+"19010
+[v _ADCNT ADCNT `VEuc  1 e 1 @7449 ]
+"19138
+[v _ADRPT ADRPT `VEuc  1 e 1 @7450 ]
+"19273
+[v _ADPREVL ADPREVL `VEuc  1 e 1 @7451 ]
+"19401
+[v _ADPREVH ADPREVH `VEuc  1 e 1 @7452 ]
+"19536
+[v _ADRESL ADRESL `VEuc  1 e 1 @7453 ]
+"19664
+[v _ADRESH ADRESH `VEuc  1 e 1 @7454 ]
+"19784
+[v _ADPCH ADPCH `VEuc  1 e 1 @7455 ]
+"19850
+[v _ADNCH ADNCH `VEuc  1 e 1 @7456 ]
+"19923
+[v _ADACQL ADACQL `VEuc  1 e 1 @7457 ]
+"20051
+[v _ADACQH ADACQH `VEuc  1 e 1 @7458 ]
+"20143
+[v _ADCAP ADCAP `VEuc  1 e 1 @7459 ]
+"20202
+[v _ADPREL ADPREL `VEuc  1 e 1 @7460 ]
+"20330
+[v _ADPREH ADPREH `VEuc  1 e 1 @7461 ]
+"20422
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @7462 ]
+[s S69 . 1 `uc 1 GO 1 0 :1:0 
+`uc 1 IC 1 0 :1:1 
+`uc 1 FM 1 0 :2:2 
+`uc 1 CS 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CONT 1 0 :1:6 
+`uc 1 ON 1 0 :1:7 
+]
+"20459
+[s S77 . 1 `uc 1 ADGO 1 0 :1:0 
+`uc 1 ADIC 1 0 :1:1 
+`uc 1 ADFM 1 0 :2:2 
+`uc 1 ADCS 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ADCONT 1 0 :1:6 
+`uc 1 ADON 1 0 :1:7 
+]
+[s S85 . 1 `uc 1 DONE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 FM0 1 0 :1:2 
+`uc 1 FM1 1 0 :1:3 
+]
+[s S90 . 1 `uc 1 GO_nDONE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM0 1 0 :1:2 
+`uc 1 ADFM1 1 0 :1:3 
+]
+[u S95 . 1 `S69 1 . 1 0 `S77 1 . 1 0 `S85 1 . 1 0 `S90 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES95  1 e 1 @7462 ]
+"20554
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @7463 ]
+[s S323 . 1 `uc 1 DSEN 1 0 :1:0 
+`uc 1 PCSC 1 0 :1:1 
+`uc 1 . 1 0 :3:2 
+`uc 1 GPOL 1 0 :1:5 
+`uc 1 IPEN 1 0 :1:6 
+`uc 1 PPOL 1 0 :1:7 
+]
+"20577
+[s S330 . 1 `uc 1 ADDSEN 1 0 :1:0 
+`uc 1 ADPCSC 1 0 :1:1 
+`uc 1 . 1 0 :3:2 
+`uc 1 ADGPOL 1 0 :1:5 
+`uc 1 ADIPEN 1 0 :1:6 
+`uc 1 ADPPOL 1 0 :1:7 
+]
+[u S337 . 1 `S323 1 . 1 0 `S330 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES337  1 e 1 @7463 ]
+"20632
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @7464 ]
+[s S184 . 1 `uc 1 MODE 1 0 :3:0 
+`uc 1 ACLR 1 0 :1:3 
+`uc 1 CRS 1 0 :3:4 
+`uc 1 PSIS 1 0 :1:7 
+]
+"20680
+[s S189 . 1 `uc 1 ADMD0 1 0 :1:0 
+`uc 1 ADMD1 1 0 :1:1 
+`uc 1 ADMD2 1 0 :1:2 
+`uc 1 ADACLR 1 0 :1:3 
+`uc 1 ADCRS0 1 0 :1:4 
+`uc 1 ADCRS1 1 0 :1:5 
+`uc 1 ADCRS2 1 0 :1:6 
+`uc 1 ADPSIS 1 0 :1:7 
+]
+[s S198 . 1 `uc 1 ADMD 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADCRS 1 0 :3:4 
+]
+[s S202 . 1 `uc 1 MODE0 1 0 :1:0 
+`uc 1 MODE1 1 0 :1:1 
+`uc 1 MODE2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 CRS0 1 0 :1:4 
+`uc 1 CRS1 1 0 :1:5 
+`uc 1 CRS2 1 0 :1:6 
+]
+[s S210 . 1 `uc 1 MD 1 0 :3:0 
+]
+[s S212 . 1 `uc 1 MD0 1 0 :1:0 
+`uc 1 MD1 1 0 :1:1 
+`uc 1 MD2 1 0 :1:2 
+]
+[s S216 . 1 `uc 1 ADMODE 1 0 :3:0 
+]
+[u S218 . 1 `S184 1 . 1 0 `S189 1 . 1 0 `S198 1 . 1 0 `S202 1 . 1 0 `S210 1 . 1 0 `S212 1 . 1 0 `S216 1 . 1 0 ]
+[v _ADCON2bits ADCON2bits `VES218  1 e 1 @7464 ]
+"20810
+[v _ADCON3 ADCON3 `VEuc  1 e 1 @7465 ]
+[s S129 . 1 `uc 1 TMD 1 0 :3:0 
+`uc 1 SOI 1 0 :1:3 
+`uc 1 CALC 1 0 :3:4 
+]
+"20845
+[s S133 . 1 `uc 1 ADTMD0 1 0 :1:0 
+`uc 1 ADTMD1 1 0 :1:1 
+`uc 1 ADTMD2 1 0 :1:2 
+`uc 1 ADSOI 1 0 :1:3 
+`uc 1 ADCALC0 1 0 :1:4 
+`uc 1 ADCALC1 1 0 :1:5 
+`uc 1 ADCALC2 1 0 :1:6 
+]
+[s S141 . 1 `uc 1 ADTMD 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADCALC 1 0 :3:4 
+]
+[s S145 . 1 `uc 1 TMD0 1 0 :1:0 
+`uc 1 TMD1 1 0 :1:1 
+`uc 1 TMD2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 CALC0 1 0 :1:4 
+`uc 1 CALC1 1 0 :1:5 
+`uc 1 CALC2 1 0 :1:6 
+]
+[u S153 . 1 `S129 1 . 1 0 `S133 1 . 1 0 `S141 1 . 1 0 `S145 1 . 1 0 ]
+[v _ADCON3bits ADCON3bits `VES153  1 e 1 @7465 ]
+"20940
+[v _ADSTAT ADSTAT `VEuc  1 e 1 @7466 ]
+[s S269 . 1 `uc 1 STAT 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 MATH 1 0 :1:4 
+`uc 1 LTHR 1 0 :1:5 
+`uc 1 UTHR 1 0 :1:6 
+`uc 1 AOV 1 0 :1:7 
+]
+"20975
+[s S276 . 1 `uc 1 ADSTAT0 1 0 :1:0 
+`uc 1 ADSTAT1 1 0 :1:1 
+`uc 1 ADSTAT2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADMATH 1 0 :1:4 
+`uc 1 ADLTHR 1 0 :1:5 
+`uc 1 ADUTHR 1 0 :1:6 
+`uc 1 ADAOV 1 0 :1:7 
+]
+[s S285 . 1 `uc 1 ADSTAT 1 0 :3:0 
+`uc 1 . 1 0 :4:3 
+`uc 1 ADOV 1 0 :1:7 
+]
+[s S289 . 1 `uc 1 STAT0 1 0 :1:0 
+`uc 1 STAT1 1 0 :1:1 
+`uc 1 STAT2 1 0 :1:2 
+]
+[u S293 . 1 `S269 1 . 1 0 `S276 1 . 1 0 `S285 1 . 1 0 `S289 1 . 1 0 ]
+[v _ADSTATbits ADSTATbits `VES293  1 e 1 @7466 ]
+"21065
+[v _ADREF ADREF `VEuc  1 e 1 @7467 ]
+"21121
+[v _ADACT ADACT `VEuc  1 e 1 @7468 ]
+"21213
+[v _ADCLK ADCLK `VEuc  1 e 1 @7469 ]
+"21317
+[v _ADCG1A ADCG1A `VEuc  1 e 1 @7470 ]
+"21362
+[v _ADCG1B ADCG1B `VEuc  1 e 1 @7471 ]
+"21401
+[v _ADCG1C ADCG1C `VEuc  1 e 1 @7472 ]
+"21623
+[v _RB7PPS RB7PPS `VEuc  1 e 1 @7579 ]
+"22173
+[v _CCP1PPS CCP1PPS `VEuc  1 e 1 @7710 ]
+"22697
+[v _RX1PPS RX1PPS `VEuc  1 e 1 @7746 ]
+"23085
+[v _ANSELA ANSELA `VEuc  1 e 1 @7820 ]
+"23163
+[v _WPUA WPUA `VEuc  1 e 1 @7821 ]
+"23213
+[v _ODCONA ODCONA `VEuc  1 e 1 @7822 ]
+"23258
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @7823 ]
+"23303
+[v _INLVLA INLVLA `VEuc  1 e 1 @7824 ]
+"23353
+[v _IOCAP IOCAP `VEuc  1 e 1 @7825 ]
+"23403
+[v _IOCAN IOCAN `VEuc  1 e 1 @7826 ]
+"23453
+[v _IOCAF IOCAF `VEuc  1 e 1 @7827 ]
+"23503
+[v _ANSELB ANSELB `VEuc  1 e 1 @7830 ]
+"23569
+[v _WPUB WPUB `VEuc  1 e 1 @7831 ]
+"23608
+[v _ODCONB ODCONB `VEuc  1 e 1 @7832 ]
+"23647
+[v _SLRCONB SLRCONB `VEuc  1 e 1 @7833 ]
+"23686
+[v _INLVLB INLVLB `VEuc  1 e 1 @7834 ]
+"23725
+[v _IOCBP IOCBP `VEuc  1 e 1 @7835 ]
+"23764
+[v _IOCBN IOCBN `VEuc  1 e 1 @7836 ]
+"23803
+[v _IOCBF IOCBF `VEuc  1 e 1 @7837 ]
+"23842
+[v _ANSELC ANSELC `VEuc  1 e 1 @7840 ]
+"23954
+[v _WPUC WPUC `VEuc  1 e 1 @7841 ]
+"24016
+[v _ODCONC ODCONC `VEuc  1 e 1 @7842 ]
+"24078
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @7843 ]
+"24140
+[v _INLVLC INLVLC `VEuc  1 e 1 @7844 ]
+"24202
+[v _IOCCP IOCCP `VEuc  1 e 1 @7845 ]
+"24264
+[v _IOCCN IOCCN `VEuc  1 e 1 @7846 ]
+"24326
+[v _IOCCF IOCCF `VEuc  1 e 1 @7847 ]
+"118 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+[v _prec prec `i  1 s 2 prec ]
+[v _width width `i  1 s 2 width ]
+"119
+[v _flags flags `uc  1 s 1 flags ]
+"144
+[v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
+"3 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\errno.c
+[v _errno errno `i  1 e 2 0 ]
+"58 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\main.c
+[v _TMR1_overflow TMR1_overflow `VEuc  1 e 1 0 ]
+"59
+[v _TMR0_overflowFlag TMR0_overflowFlag `VEa  1 e 1 0 ]
+"60
+[v _CCP_capturedValue CCP_capturedValue `VEus  1 e 2 0 ]
+"61
+[v _TMR1_overflowValue TMR1_overflowValue `VEuc  1 e 1 0 ]
+"62
+[v _ccpCapturedFqFlag ccpCapturedFqFlag `VEa  1 e 1 0 ]
+"64
+[v _timePeriod timePeriod `ul  1 e 4 0 ]
+"65
+[v _tdsValue tdsValue `us  1 e 2 0 ]
+"66
+[v _tdsProbeTemperature tdsProbeTemperature `us  1 e 2 0 ]
+"67
+[v _capturedFq capturedFq `us  1 e 2 0 ]
+"50 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\mcc_generated_files/capture/src/ccp1.c
+[v _CCP1_CallBack CCP1_CallBack `*.37(v  1 s 2 CCP1_CallBack ]
+"38 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\mcc_generated_files/system/src/interrupt.c
+[v _INT_InterruptHandler INT_InterruptHandler `*.37(v  1 e 2 0 ]
+[s S1154 TMR_INTERFACE 12 `*.37(v 1 Initialize 2 0 `*.37(v 1 Start 2 2 `*.37(v 1 Stop 2 4 `*.37(v 1 PeriodCountSet 2 6 `*.37(v 1 TimeoutCallbackRegister 2 8 `*.37(v 1 Tasks 2 10 ]
+"37 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\mcc_generated_files/timer/src/tmr0.c
+[v _Timer0 Timer0 `DCS1154  1 e 12 0 ]
+"46
+[v _Timer0_OverflowCallback Timer0_OverflowCallback `*.37(v  1 s 2 Timer0_OverflowCallback ]
+"43 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\mcc_generated_files/timer/src/tmr1.c
+[v _timer1ReloadVal timer1ReloadVal `VEus  1 e 2 0 ]
+"46
+[v _Timer1 Timer1 `DCS1154  1 e 12 0 ]
+"54
+[v _Timer1_OverflowCallback Timer1_OverflowCallback `*.37(v  1 s 2 Timer1_OverflowCallback ]
+[s S1683 . 1 `uc 1 perr 1 0 :1:0 
+`uc 1 ferr 1 0 :1:1 
+`uc 1 oerr 1 0 :1:2 
+`uc 1 reserved 1 0 :5:3 
+]
+"76 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\mcc_generated_files/uart/src/eusart1.c
+[u S1688 . 2 `S1683 1 . 1 0 `ui 1 status 2 0 ]
+[v _eusart1RxLastError eusart1RxLastError `VES1688  1 e 2 0 ]
+"82
+[v _EUSART1_FramingErrorHandler EUSART1_FramingErrorHandler `*.37(v  1 e 2 0 ]
+"83
+[v _EUSART1_OverrunErrorHandler EUSART1_OverrunErrorHandler `*.37(v  1 e 2 0 ]
+"85 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\main.c
+[v _main main `(i  1 e 2 0 ]
+{
+"142
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\printf.c
+[v _printf printf `(i  1 e 2 0 ]
+{
+"8
+[v printf@ap ap `[1]*.4v  1 a 1 68 ]
+"5
+[v printf@fmt fmt `*.25DCuc  1 p 2 64 ]
+"13
+} 0
+"1546 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+{
+"1549
+[v vfprintf@cfmt cfmt `*.25uc  1 a 2 62 ]
+[s S2520 _IO_FILE 0 ]
+"1546
+[v vfprintf@fp fp `*.39S2520  1 p 2 56 ]
+[v vfprintf@fmt fmt `*.25DCuc  1 p 2 58 ]
+[v vfprintf@ap ap `*.4*.4v  1 p 1 60 ]
+"1569
+} 0
+"1048
+[v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
+{
+[u S2538 . 4 `i 1 sint 2 0 `ui 1 uint 2 0 `*.39v 1 vp 2 0 `d 1 f 4 0 ]
+"1059
+[v vfpfcnvrt@convarg convarg `S2538  1 a 4 48 ]
+"1050
+[v vfpfcnvrt@cp cp `*.25uc  1 a 2 54 ]
+[s S2520 _IO_FILE 0 ]
+"1048
+[v vfpfcnvrt@fp fp `*.39S2520  1 p 2 40 ]
+[v vfpfcnvrt@fmt fmt `*.4*.25uc  1 p 1 42 ]
+[v vfpfcnvrt@ap ap `*.4*.4v  1 p 1 43 ]
+"1543
+} 0
+"917
+[v _utoa utoa `(v  1 s 1 utoa ]
+{
+"919
+[v utoa@i i `i  1 a 2 38 ]
+[v utoa@p p `i  1 a 2 36 ]
+[v utoa@w w `i  1 a 2 34 ]
+[s S2520 _IO_FILE 0 ]
+"917
+[v utoa@fp fp `*.39S2520  1 p 2 29 ]
+[v utoa@d d `ui  1 p 2 31 ]
+"947
+} 0
+"152
+[v _pad pad `(v  1 s 1 pad ]
+{
+"154
+[v pad@w w `i  1 a 2 27 ]
+[v pad@i i `i  1 a 2 25 ]
+[s S2520 _IO_FILE 0 ]
+"152
+[v pad@fp fp `*.39S2520  1 p 2 19 ]
+[v pad@buf buf `*.5uc  1 p 1 21 ]
+[v pad@p p `i  1 p 2 22 ]
+"183
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+{
+[v fputs@s s `*.5DCuc  1 a 1 wreg ]
+"11
+[v fputs@i i `i  1 a 2 17 ]
+"10
+[v fputs@c c `uc  1 a 1 16 ]
+"8
+[v fputs@s s `*.5DCuc  1 a 1 wreg ]
+[u S2499 . 2 `*.39uc 1 buffer 2 0 `*.39DCuc 1 source 2 0 ]
+[s S2502 _IO_FILE 11 `S2499 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputs@fp fp `*.39S2502  1 p 2 11 ]
+"13
+[v fputs@s s `*.5DCuc  1 a 1 15 ]
+"19
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 5 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 0 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 2 ]
+"25
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 6 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 5 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
+"30
+} 0
+"3 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\strncmp.c
+[v _strncmp strncmp `(i  1 e 2 0 ]
+{
+"5
+[v strncmp@r r `*.25DCuc  1 a 2 9 ]
+[v strncmp@l l `*.25DCuc  1 a 2 7 ]
+"3
+[v strncmp@_l _l `*.25DCuc  1 p 2 0 ]
+[v strncmp@_r _r `*.25DCuc  1 p 2 2 ]
+[v strncmp@n n `ui  1 p 2 4 ]
+"9
+} 0
+"862 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\doprnt.c
+[v _stoa stoa `(v  1 s 1 stoa ]
+{
+"864
+[v stoa@nuls nuls `[7]uc  1 a 7 17 ]
+"865
+[v stoa@p p `i  1 a 2 32 ]
+[v stoa@l l `i  1 a 2 30 ]
+"864
+[v stoa@cp cp `*.26uc  1 a 2 28 ]
+"865
+[v stoa@i i `i  1 a 2 26 ]
+[v stoa@w w `i  1 a 2 24 ]
+[s S2520 _IO_FILE 0 ]
+"862
+[v stoa@fp fp `*.39S2520  1 p 2 11 ]
+[v stoa@s s `*.26uc  1 p 2 13 ]
+"864
+[v stoa@F1149 F1149 `[7]uc  1 s 7 F1149 ]
+"913
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+{
+"7
+[v strlen@a a `*.26DCuc  1 a 2 3 ]
+"5
+[v strlen@s s `*.26DCuc  1 p 2 0 ]
+"12
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+{
+[v fputc@c c `i  1 p 2 2 ]
+[u S2499 . 2 `*.39uc 1 buffer 2 0 `*.39DCuc 1 source 2 0 ]
+[s S2502 _IO_FILE 11 `S2499 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputc@fp fp `*.39S2502  1 p 2 4 ]
+"24
+} 0
+"207 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\mcc_generated_files/uart/src/eusart1.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+[v putch@txData txData `uc  1 a 1 wreg ]
+[v putch@txData txData `uc  1 a 1 wreg ]
+[v putch@txData txData `uc  1 a 1 1 ]
+"211
+} 0
+"196
+[v _EUSART1_Write EUSART1_Write `(v  1 e 1 0 ]
+{
+[v EUSART1_Write@txData txData `uc  1 p 1 0 ]
+"199
+} 0
+"159
+[v _EUSART1_IsTxReady EUSART1_IsTxReady `(a  1 e 1 0 ]
+{
+"162
+} 0
+"43 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\mcc_generated_files/system/src/system.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"54
+} 0
+"57 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\mcc_generated_files/timer/src/tmr1.c
+[v _Timer1_Initialize Timer1_Initialize `(v  1 e 1 0 ]
+{
+"85
+} 0
+"116 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\mcc_generated_files/timer/src/tmr0.c
+[v _Timer0_OverflowCallbackRegister Timer0_OverflowCallbackRegister `(v  1 e 1 0 ]
+{
+[v Timer0_OverflowCallbackRegister@CallbackHandler CallbackHandler `*.37(v  1 p 2 0 ]
+"119
+} 0
+"164 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\mcc_generated_files/timer/src/tmr1.c
+[v _Timer1_OverflowCallbackRegister Timer1_OverflowCallbackRegister `(v  1 e 1 0 ]
+{
+[v Timer1_OverflowCallbackRegister@CallbackHandler CallbackHandler `*.37(v  1 p 2 0 ]
+"167
+} 0
+"49 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\mcc_generated_files/timer/src/tmr0.c
+[v _Timer0_Initialize Timer0_Initialize `(v  1 e 1 0 ]
+{
+"72
+} 0
+"38 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\mcc_generated_files/system/src/pins.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"114
+} 0
+"44 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\mcc_generated_files/opa/src/opa1.c
+[v _OPA1_Initialize OPA1_Initialize `(v  1 e 1 0 ]
+{
+"63
+} 0
+"40 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\mcc_generated_files/system/src/interrupt.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+{
+"50
+} 0
+"110
+[v _INT_SetInterruptHandler INT_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v INT_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+"112
+} 0
+"93 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\mcc_generated_files/uart/src/eusart1.c
+[v _EUSART1_Initialize EUSART1_Initialize `(v  1 e 1 0 ]
+{
+"112
+} 0
+"233
+[v _EUSART1_OverrunErrorCallbackRegister EUSART1_OverrunErrorCallbackRegister `(v  1 e 1 0 ]
+{
+[v EUSART1_OverrunErrorCallbackRegister@callbackHandler callbackHandler `*.37(v  1 p 2 0 ]
+"239
+} 0
+"225
+[v _EUSART1_FramingErrorCallbackRegister EUSART1_FramingErrorCallbackRegister `(v  1 e 1 0 ]
+{
+[v EUSART1_FramingErrorCallbackRegister@callbackHandler callbackHandler `*.37(v  1 p 2 0 ]
+"231
+} 0
+"37 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\mcc_generated_files/system/src/clock.c
+[v _CLOCK_Initialize CLOCK_Initialize `(v  1 e 1 0 ]
+{
+"52
+} 0
+"60 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\mcc_generated_files/capture/src/ccp1.c
+[v _CCP1_Initialize CCP1_Initialize `(v  1 e 1 0 ]
+{
+"84
+} 0
+"101
+[v _CCP1_SetCallBack CCP1_SetCallBack `(v  1 e 1 0 ]
+{
+[v CCP1_SetCallBack@customCallBack customCallBack `*.37(v  1 p 2 0 ]
+"103
+} 0
+"45 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\mcc_generated_files/adcc/src/adcc.c
+[v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
+{
+"106
+} 0
+"218 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\main.c
+[v _GetWaterTDS GetWaterTDS `(us  1 s 2 GetWaterTDS ]
+{
+"220
+[v GetWaterTDS@conductivity conductivity `f  1 a 4 76 ]
+"221
+[v GetWaterTDS@waterTDS waterTDS `us  1 a 2 74 ]
+"218
+[v GetWaterTDS@capturedFq capturedFq `us  1 p 2 70 ]
+[v GetWaterTDS@temperature temperature `us  1 p 2 72 ]
+"229
+} 0
+"231
+[v _GetTempCompensatedConductivityValue GetTempCompensatedConductivityValue `(f  1 s 4 GetTempCompensatedConductivityValue ]
+{
+[v GetTempCompensatedConductivityValue@conductivity conductivity `f  1 p 4 60 ]
+[v GetTempCompensatedConductivityValue@temperature temperature `us  1 p 2 64 ]
+"241
+} 0
+"200
+[v _GetTdsProbeTemperature GetTdsProbeTemperature `(us  1 s 2 GetTdsProbeTemperature ]
+{
+"203
+[v GetTdsProbeTemperature@probeTemperature probeTemperature `f  1 a 4 42 ]
+"202
+[v GetTdsProbeTemperature@adcCount adcCount `us  1 a 2 40 ]
+"216
+} 0
+"29 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\logf.c
+[v _logf logf `(f  1 e 4 0 ]
+{
+"33
+[v logf@ix ix `ul  1 a 4 62 ]
+"32
+[v logf@f f `f  1 a 4 58 ]
+[u S2465 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+"31
+[v logf@u u `S2465  1 a 4 54 ]
+"32
+[v logf@w w `f  1 a 4 46 ]
+[v logf@z z `f  1 a 4 42 ]
+[v logf@s s `f  1 a 4 38 ]
+[v logf@dk dk `f  1 a 4 34 ]
+[v logf@hfsq hfsq `f  1 a 4 30 ]
+[v logf@t2 t2 `f  1 a 4 8 ]
+[v logf@t1 t1 `f  1 a 4 4 ]
+[v logf@R R `f  1 a 4 0 ]
+"34
+[v logf@k k `i  1 a 2 28 ]
+"29
+[v logf@x x `f  1 p 4 76 ]
+"30
+[v logf@F472 F472 `S2465  1 s 4 F472 ]
+"72
+} 0
+"10 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 10 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 9 ]
+"10
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 0 ]
+"15
+[v ___xxtofl@sign sign `uc  1 a 1 8 ]
+"44
+} 0
+"242 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcadd.c
+[v ___flsub __flsub `(d  1 e 4 0 ]
+{
+[v ___flsub@a a `d  1 p 4 60 ]
+[v ___flsub@b b `d  1 p 4 64 ]
+"250
+} 0
+"10
+[v ___fladd __fladd `(d  1 e 4 0 ]
+{
+"17
+[v ___fladd@grs grs `uc  1 a 1 59 ]
+"15
+[v ___fladd@bexp bexp `uc  1 a 1 58 ]
+"16
+[v ___fladd@aexp aexp `uc  1 a 1 57 ]
+"13
+[v ___fladd@signs signs `uc  1 a 1 56 ]
+"10
+[v ___fladd@b b `d  1 p 4 40 ]
+[v ___fladd@a a `d  1 p 4 44 ]
+"237
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+{
+[s S2318 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"13
+[s S2323 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
+[u S2326 . 4 `l 1 i 4 0 `d 1 f 4 0 `S2318 1 fAsBytes 4 0 `S2323 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S2326  1 a 4 34 ]
+"12
+[v ___flmul@grs grs `ul  1 a 4 29 ]
+[s S2395 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S2398 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S2395 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S2398  1 a 2 38 ]
+"10
+[v ___flmul@bexp bexp `uc  1 a 1 33 ]
+"11
+[v ___flmul@aexp aexp `uc  1 a 1 28 ]
+"9
+[v ___flmul@sign sign `uc  1 a 1 27 ]
+"8
+[v ___flmul@b b `d  1 p 4 14 ]
+[v ___flmul@a a `d  1 p 4 18 ]
+"205
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+{
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v __Umul8_16@word_mpld word_mpld `ui  1 a 2 6 ]
+"5
+[v __Umul8_16@product product `ui  1 a 2 4 ]
+"4
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
+[v __Umul8_16@multiplicand multiplicand `uc  1 p 1 0 ]
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 8 ]
+"60
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 12 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 5 ]
+"20
+[v ___fldiv@new_exp new_exp `i  1 a 2 10 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 17 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 16 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 9 ]
+"8
+[v ___fldiv@a a `d  1 p 4 68 ]
+[v ___fldiv@b b `d  1 p 4 72 ]
+"185
+} 0
+"43 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 49 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 48 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 40 ]
+"70
+} 0
+"131 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\mcc_generated_files/adcc/src/adcc.c
+[v _ADCC_GetSingleConversion ADCC_GetSingleConversion `(us  1 e 2 0 ]
+{
+[v ADCC_GetSingleConversion@channel channel `E8603  1 a 1 wreg ]
+[v ADCC_GetSingleConversion@channel channel `E8603  1 a 1 wreg ]
+"134
+[v ADCC_GetSingleConversion@channel channel `E8603  1 a 1 2 ]
+"153
+} 0
+"144 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\main.c
+[v _GetCapturedTimePeriod GetCapturedTimePeriod `(ul  1 s 4 GetCapturedTimePeriod ]
+{
+"146
+[v GetCapturedTimePeriod@tmr1TotalCount tmr1TotalCount `ul  1 a 4 20 ]
+"147
+[v GetCapturedTimePeriod@capturedTimePeriod capturedTimePeriod `ul  1 a 4 16 ]
+"149
+[v GetCapturedTimePeriod@CCP_captureCount CCP_captureCount `us  1 a 2 14 ]
+"148
+[v GetCapturedTimePeriod@TMR1_overflowCount TMR1_overflowCount `uc  1 a 1 24 ]
+"168
+} 0
+"180
+[v _TMR1_ResetOverflowCount TMR1_ResetOverflowCount `(v  1 s 1 TMR1_ResetOverflowCount ]
+{
+"183
+} 0
+"175
+[v _TMR1_GetOverflowCount TMR1_GetOverflowCount `(uc  1 s 1 TMR1_GetOverflowCount ]
+{
+"178
+} 0
+"185
+[v _CCP1_ResetCapturedCount CCP1_ResetCapturedCount `(v  1 s 1 CCP1_ResetCapturedCount ]
+{
+"188
+} 0
+"170
+[v _CCP1_GetCapturedCount CCP1_GetCapturedCount `(us  1 s 2 CCP1_GetCapturedCount ]
+{
+"173
+} 0
+"190
+[v _GetCapturedFrequency GetCapturedFrequency `(us  1 s 2 GetCapturedFrequency ]
+{
+"192
+[v GetCapturedFrequency@fq fq `us  1 a 2 20 ]
+"190
+[v GetCapturedFrequency@capturedTimeIn_us capturedTimeIn_us `ul  1 p 4 14 ]
+"198
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"10
+[v ___lldiv@quotient quotient `ul  1 a 4 9 ]
+"11
+[v ___lldiv@counter counter `uc  1 a 1 13 ]
+"5
+[v ___lldiv@divisor divisor `ul  1 p 4 0 ]
+[v ___lldiv@dividend dividend `ul  1 p 4 4 ]
+"30
+} 0
+"59 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\mcc_generated_files/system/src/interrupt.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+{
+"90
+} 0
+"151 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\mcc_generated_files/timer/src/tmr1.c
+[v _Timer1_OverflowISR Timer1_OverflowISR `(v  1 e 1 0 ]
+{
+"162
+} 0
+"106 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\mcc_generated_files/timer/src/tmr0.c
+[v _Timer0_OverflowISR Timer0_OverflowISR `(v  1 e 1 0 ]
+{
+"114
+} 0
+"257 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\main.c
+[v _TMR0_UserOverflowCallback TMR0_UserOverflowCallback `(v  1 s 1 TMR0_UserOverflowCallback ]
+{
+"260
+} 0
+"252
+[v _TMR1_UserOverflowCallback TMR1_UserOverflowCallback `(v  1 s 1 TMR1_UserOverflowCallback ]
+{
+"255
+} 0
+"121 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\mcc_generated_files/timer/src/tmr0.c
+[v _Timer0_DefaultOverflowCallback Timer0_DefaultOverflowCallback `(v  1 s 1 Timer0_DefaultOverflowCallback ]
+{
+"125
+} 0
+"169 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\mcc_generated_files/timer/src/tmr1.c
+[v _Timer1_DefaultOverflowCallback Timer1_DefaultOverflowCallback `(v  1 s 1 Timer1_DefaultOverflowCallback ]
+{
+"173
+} 0
+"116 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\mcc_generated_files/system/src/pins.c
+[v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
+{
+"118
+} 0
+"86 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\mcc_generated_files/capture/src/ccp1.c
+[v _CCP1_CaptureISR CCP1_CaptureISR `(v  1 e 1 0 ]
+{
+[s S488 . 2 `uc 1 ccpr1l 1 0 `uc 1 ccpr1h 1 1 ]
+"88
+[s S491 . 2 `us 1 ccpr1_16Bit 2 0 ]
+[u S493 CCPR1Reg_tag 2 `S488 1 . 2 0 `S491 1 . 2 0 ]
+[v CCP1_CaptureISR@module module `S493  1 a 2 4 ]
+"99
+} 0
+"56
+[v _CCP1_DefaultCallBack CCP1_DefaultCallBack `(v  1 s 1 CCP1_DefaultCallBack ]
+{
+"58
+} 0
+"243 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\main.c
+[v _CCP1_UserCallBack CCP1_UserCallBack `(v  1 s 1 CCP1_UserCallBack ]
+{
+[v CCP1_UserCallBack@capturedValue capturedValue `us  1 p 2 2 ]
+"250
+} 0
+"114 C:\Users\direc\Desktop\PIC\pic16f17146-water-tds-measurement-mplab-mcc\pic16f17146-water-tds-measurement-mplab-mcc.X\mcc_generated_files/timer/src/tmr1.c
+[v _Timer1_Write Timer1_Write `(v  1 e 1 0 ]
+{
+[v Timer1_Write@timerVal timerVal `ui  1 p 2 0 ]
+"134
+} 0

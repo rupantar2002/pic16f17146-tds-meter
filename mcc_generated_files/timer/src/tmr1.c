@@ -5,12 +5,12 @@
   *
   * @ingroup tmr1
   *
-  * @brief Driver implementation for the TMR1 driver
+  * @brief This file contains the driver code for TMR1 module.
   *
-  * @version TMR1 Driver Version 3.1.0
+  * @version TMR1 Driver Version 3.0.1
 */
 /*
-© [2023] Microchip Technology Inc. and its subsidiaries.
+© [2022] Microchip Technology Inc. and its subsidiaries.
 
     Subject to your compliance with these terms, you may use Microchip 
     software and any derivatives exclusively with Microchip products. 
@@ -47,7 +47,7 @@ const struct TMR_INTERFACE Timer1 = {
     .Initialize = Timer1_Initialize,
     .Start = Timer1_Start,
     .Stop = Timer1_Stop,
-    .PeriodCountSet = Timer1_PeriodCountSet,
+    .PeriodCountSet = Timer1_Write,
     .TimeoutCallbackRegister = Timer1_OverflowCallbackRegister,
     .Tasks = NULL
 };
@@ -55,6 +55,7 @@ static void (*Timer1_OverflowCallback)(void);
 static void Timer1_DefaultOverflowCallback(void);
 
 void Timer1_Initialize(void)
+
 {
     //TGGO done; TGSPM disabled; TGTM disabled; TGPOL low; TMRGE disabled; 
     T1GCON = 0x0;
@@ -63,9 +64,9 @@ void Timer1_Initialize(void)
     //TMRCS FOSC/4; 
     T1CLK = 0x1;
     //TMRH 255; 
-    TMR1H = 0xFF;
-    //TMRL 254; 
-    TMR1L = 0xFE;
+    TMR1H = 0x00;
+    //TMRL 255; 
+    TMR1L = 0x00;
 
     // Load the TMR1 value to reload variable
     timer1ReloadVal=(uint16_t)((TMR1H << 8) | TMR1L);
@@ -73,10 +74,11 @@ void Timer1_Initialize(void)
     //Set default callback for TMR1 overflow interrupt
     Timer1_OverflowCallbackRegister(Timer1_DefaultOverflowCallback);
 
-    // Clearing TMRI IF flag before enabling the interrupt.
-     PIR1bits.TMR1IF = 0;
-    // Enabling TMRI interrupt.
-     PIE1bits.TMR1IE = 1;
+        // Clearing TMRI IF flag before enabling the interrupt.
+         PIR1bits.TMR1IF = 0;
+        // Enabling TMRI interrupt.
+         PIE1bits.TMR1IE = 1;
+
     
     //TMRON enabled; TRD16 disabled; nTSYNC synchronize; TCKPS 1:1; 
     T1CON = 0x1;
@@ -134,11 +136,6 @@ void Timer1_Write(size_t timerVal)
 void Timer1_Reload(void)
 {
     Timer1_Write(timer1ReloadVal);
-}
-
-void Timer1_PeriodCountSet(size_t periodVal)
-{
-   timer1ReloadVal = (uint16_t) periodVal;
 }
 
 void Timer1_StartSinglePulseAcquisition(void)

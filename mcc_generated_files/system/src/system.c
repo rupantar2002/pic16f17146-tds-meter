@@ -5,12 +5,13 @@
  * 
  * @ingroup systemdriver
  * 
- * @brief This file contains the API implementation for the System Driver.
+ * @brief This is the generated driver implementation file for the System Driver.
  *
- * @version Driver Version 2.0.2
+ * @version Driver Version 2.0.1
 */
+
 /*
-© [2023] Microchip Technology Inc. and its subsidiaries.
+© [2022] Microchip Technology Inc. and its subsidiaries.
 
     Subject to your compliance with these terms, you may use Microchip 
     software and any derivatives exclusively with Microchip products. 
@@ -30,8 +31,14 @@
     THIS SOFTWARE.
 */
 
+ /**
+   Section: Included Files
+ */
 #include "../system.h"
 
+/**
+  Section: Driver APIs
+*/
 
 void SYSTEM_Initialize(void)
 {

@@ -5,13 +5,13 @@
  * 
  * @ingroup interrupt 
  * 
- * @brief This file contains the API implementation for the Interrupt Manager driver.
+ * @brief This file contains the driver code for Interrupt Manager.
  * 
- * @version Interrupt Manager Driver Version 2.0.5
+ * @version Interrupt Manager Driver Version 2.0.4
 */
 
 /*
-© [2023] Microchip Technology Inc. and its subsidiaries.
+© [2022] Microchip Technology Inc. and its subsidiaries.
 
     Subject to your compliance with these terms, you may use Microchip 
     software and any derivatives exclusively with Microchip products. 
@@ -51,25 +51,22 @@ void  INTERRUPT_Initialize (void)
 
 /**
  * @ingroup interrupt
- * @brief Services the Interrupt Service Routines (ISR) of enabled interrupts and is called every time an interrupt is triggered.
+ * @brief This routine services the ISRs of enabled interrupts and is called everytime an interrupt is triggered.
  * @pre Interrupt Manager is initialized.
- * @param None.
- * @return None.
+ * @param void
+ * @return void
  */
 void __interrupt() INTERRUPT_InterruptManager (void)
 {
-    // interrupt handler
+    // GPIO pin interrupt on Change(IOC)
     if(PIE0bits.IOCIE == 1 && PIR0bits.IOCIF == 1)
     {
         PIN_MANAGER_IOC();
     }
-    else if(INTCONbits.PEIE == 1)
+    // interrupt handler
+    if(INTCONbits.PEIE == 1)
     {
-        if(PIE4bits.RC1IE == 1 && PIR4bits.RC1IF == 1)
-        {
-            EUSART1_RxInterruptHandler();
-        } 
-        else if(PIE1bits.TMR1IE == 1 && PIR1bits.TMR1IF == 1)
+        if(PIE1bits.TMR1IE == 1 && PIR1bits.TMR1IF == 1)
         {
             Timer1_OverflowISR();
         } 

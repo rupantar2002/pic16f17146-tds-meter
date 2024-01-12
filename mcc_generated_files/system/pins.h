@@ -12,7 +12,7 @@
 */
 
 /*
-© [2023] Microchip Technology Inc. and its subsidiaries.
+© [2022] Microchip Technology Inc. and its subsidiaries.
 
     Subject to your compliance with these terms, you may use Microchip 
     software and any derivatives exclusively with Microchip products. 
@@ -68,25 +68,7 @@
 #define RA2_IN2_SetOpenDrain()       do { ODCONAbits.ODCA2 = 1; } while(0)
 #define RA2_IN2_SetAnalogMode()      do { ANSELAbits.ANSA2 = 1; } while(0)
 #define RA2_IN2_SetDigitalMode()     do { ANSELAbits.ANSA2 = 0; } while(0)
-// get/set IO_RB4 aliases
-#define IO_RB4_TRIS                 TRISBbits.TRISB4
-#define IO_RB4_LAT                  LATBbits.LATB4
-#define IO_RB4_PORT                 PORTBbits.RB4
-#define IO_RB4_WPU                  WPUBbits.WPUB4
-#define IO_RB4_OD                   ODCONBbits.ODCB4
-#define IO_RB4_ANS                  ANSELBbits.ANSB4
-#define IO_RB4_SetHigh()            do { LATBbits.LATB4 = 1; } while(0)
-#define IO_RB4_SetLow()             do { LATBbits.LATB4 = 0; } while(0)
-#define IO_RB4_Toggle()             do { LATBbits.LATB4 = ~LATBbits.LATB4; } while(0)
-#define IO_RB4_GetValue()           PORTBbits.RB4
-#define IO_RB4_SetDigitalInput()    do { TRISBbits.TRISB4 = 1; } while(0)
-#define IO_RB4_SetDigitalOutput()   do { TRISBbits.TRISB4 = 0; } while(0)
-#define IO_RB4_SetPullup()          do { WPUBbits.WPUB4 = 1; } while(0)
-#define IO_RB4_ResetPullup()        do { WPUBbits.WPUB4 = 0; } while(0)
-#define IO_RB4_SetPushPull()        do { ODCONBbits.ODCB4 = 0; } while(0)
-#define IO_RB4_SetOpenDrain()       do { ODCONBbits.ODCB4 = 1; } while(0)
-#define IO_RB4_SetAnalogMode()      do { ANSELBbits.ANSB4 = 1; } while(0)
-#define IO_RB4_SetDigitalMode()     do { ANSELBbits.ANSB4 = 0; } while(0)
+
 // get/set IO_RB5 aliases
 #define IO_RB5_TRIS                 TRISBbits.TRISB5
 #define IO_RB5_LAT                  LATBbits.LATB5
@@ -106,6 +88,7 @@
 #define IO_RB5_SetOpenDrain()       do { ODCONBbits.ODCB5 = 1; } while(0)
 #define IO_RB5_SetAnalogMode()      do { ANSELBbits.ANSB5 = 1; } while(0)
 #define IO_RB5_SetDigitalMode()     do { ANSELBbits.ANSB5 = 0; } while(0)
+
 // get/set IO_RB7 aliases
 #define IO_RB7_TRIS                 TRISBbits.TRISB7
 #define IO_RB7_LAT                  LATBbits.LATB7
@@ -125,6 +108,7 @@
 #define IO_RB7_SetOpenDrain()       do { ODCONBbits.ODCB7 = 1; } while(0)
 #define IO_RB7_SetAnalogMode()      do { ANSELBbits.ANSB7 = 1; } while(0)
 #define IO_RB7_SetDigitalMode()     do { ANSELBbits.ANSB7 = 0; } while(0)
+
 // get/set IO_RC2 aliases
 #define IO_RC2_TRIS                 TRISCbits.TRISC2
 #define IO_RC2_LAT                  LATCbits.LATC2
@@ -144,6 +128,7 @@
 #define IO_RC2_SetOpenDrain()       do { ODCONCbits.ODCC2 = 1; } while(0)
 #define IO_RC2_SetAnalogMode()      do { ANSELCbits.ANSC2 = 1; } while(0)
 #define IO_RC2_SetDigitalMode()     do { ANSELCbits.ANSC2 = 0; } while(0)
+
 // get/set IO_RC3 aliases
 #define RC3_IN1_TRIS                 TRISCbits.TRISC3
 #define RC3_IN1_LAT                  LATCbits.LATC3
@@ -163,6 +148,7 @@
 #define RC3_IN1_SetOpenDrain()       do { ODCONCbits.ODCC3 = 1; } while(0)
 #define RC3_IN1_SetAnalogMode()      do { ANSELCbits.ANSC3 = 1; } while(0)
 #define RC3_IN1_SetDigitalMode()     do { ANSELCbits.ANSC3 = 0; } while(0)
+
 // get/set IO_RC4 aliases
 #define IO_RC4_TRIS                 TRISCbits.TRISC4
 #define IO_RC4_LAT                  LATCbits.LATC4
@@ -182,25 +168,27 @@
 #define IO_RC4_SetOpenDrain()       do { ODCONCbits.ODCC4 = 1; } while(0)
 #define IO_RC4_SetAnalogMode()      do { ANSELCbits.ANSC4 = 1; } while(0)
 #define IO_RC4_SetDigitalMode()     do { ANSELCbits.ANSC4 = 0; } while(0)
+
 // get/set IO_RC5 aliases
-#define IO_RC5_TRIS                 TRISCbits.TRISC5
-#define IO_RC5_LAT                  LATCbits.LATC5
-#define IO_RC5_PORT                 PORTCbits.RC5
-#define IO_RC5_WPU                  WPUCbits.WPUC5
-#define IO_RC5_OD                   ODCONCbits.ODCC5
-#define IO_RC5_ANS                  ANSELCbits.ANSC5
-#define IO_RC5_SetHigh()            do { LATCbits.LATC5 = 1; } while(0)
-#define IO_RC5_SetLow()             do { LATCbits.LATC5 = 0; } while(0)
-#define IO_RC5_Toggle()             do { LATCbits.LATC5 = ~LATCbits.LATC5; } while(0)
-#define IO_RC5_GetValue()           PORTCbits.RC5
-#define IO_RC5_SetDigitalInput()    do { TRISCbits.TRISC5 = 1; } while(0)
-#define IO_RC5_SetDigitalOutput()   do { TRISCbits.TRISC5 = 0; } while(0)
-#define IO_RC5_SetPullup()          do { WPUCbits.WPUC5 = 1; } while(0)
-#define IO_RC5_ResetPullup()        do { WPUCbits.WPUC5 = 0; } while(0)
-#define IO_RC5_SetPushPull()        do { ODCONCbits.ODCC5 = 0; } while(0)
-#define IO_RC5_SetOpenDrain()       do { ODCONCbits.ODCC5 = 1; } while(0)
-#define IO_RC5_SetAnalogMode()      do { ANSELCbits.ANSC5 = 1; } while(0)
-#define IO_RC5_SetDigitalMode()     do { ANSELCbits.ANSC5 = 0; } while(0)
+#define channel_Temperature_TRIS                 TRISCbits.TRISC5
+#define channel_Temperature_LAT                  LATCbits.LATC5
+#define channel_Temperature_PORT                 PORTCbits.RC5
+#define channel_Temperature_WPU                  WPUCbits.WPUC5
+#define channel_Temperature_OD                   ODCONCbits.ODCC5
+#define channel_Temperature_ANS                  ANSELCbits.ANSC5
+#define channel_Temperature_SetHigh()            do { LATCbits.LATC5 = 1; } while(0)
+#define channel_Temperature_SetLow()             do { LATCbits.LATC5 = 0; } while(0)
+#define channel_Temperature_Toggle()             do { LATCbits.LATC5 = ~LATCbits.LATC5; } while(0)
+#define channel_Temperature_GetValue()           PORTCbits.RC5
+#define channel_Temperature_SetDigitalInput()    do { TRISCbits.TRISC5 = 1; } while(0)
+#define channel_Temperature_SetDigitalOutput()   do { TRISCbits.TRISC5 = 0; } while(0)
+#define channel_Temperature_SetPullup()          do { WPUCbits.WPUC5 = 1; } while(0)
+#define channel_Temperature_ResetPullup()        do { WPUCbits.WPUC5 = 0; } while(0)
+#define channel_Temperature_SetPushPull()        do { ODCONCbits.ODCC5 = 0; } while(0)
+#define channel_Temperature_SetOpenDrain()       do { ODCONCbits.ODCC5 = 1; } while(0)
+#define channel_Temperature_SetAnalogMode()      do { ANSELCbits.ANSC5 = 1; } while(0)
+#define channel_Temperature_SetDigitalMode()     do { ANSELCbits.ANSC5 = 0; } while(0)
+
 /**
  * @ingroup  pinsdriver
  * @brief GPIO and peripheral I/O initialization

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/free/production\pic16f17146-water-tds-measurement-mplab-mcc.X.production.hex">
+    <memory name="program">
+      <units>words</units>
+      <length>16384</length>
+      <used>6304</used>
+      <free>10080</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>2048</length>
+      <used>284</used>
+      <free>1764</free>
+    </memory>
+  </executable>
+</project>

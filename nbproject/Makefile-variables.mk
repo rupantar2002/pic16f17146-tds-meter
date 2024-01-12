@@ -4,7 +4,11 @@
 # NOCDDL
 #
 CND_BASEDIR=`pwd`
-# default configuration
-CND_ARTIFACT_DIR_default=dist/default/production
-CND_ARTIFACT_NAME_default=pic16f17146-tds-meter.X.production.hex
-CND_ARTIFACT_PATH_default=dist/default/production/pic16f17146-tds-meter.X.production.hex
+# free configuration
+CND_ARTIFACT_DIR_free=dist/free/production
+CND_ARTIFACT_NAME_free=pic16f17146-water-tds-measurement-mplab-mcc.X.production.hex
+CND_ARTIFACT_PATH_free=dist/free/production/pic16f17146-water-tds-measurement-mplab-mcc.X.production.hex
+# pro configuration
+CND_ARTIFACT_DIR_pro=dist/pro/production
+CND_ARTIFACT_NAME_pro=pic16f17146-water-tds-measurement-mplab-mcc.X.production.hex
+CND_ARTIFACT_PATH_pro=dist/pro/production/pic16f17146-water-tds-measurement-mplab-mcc.X.production.hex

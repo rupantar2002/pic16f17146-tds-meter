@@ -10,7 +10,7 @@
  * @version ADCC Driver Version 1.0.1
 */
 /*
-© [2023] Microchip Technology Inc. and its subsidiaries.
+© [2022] Microchip Technology Inc. and its subsidiaries.
 
     Subject to your compliance with these terms, you may use Microchip 
     software and any derivatives exclusively with Microchip products. 
@@ -66,7 +66,7 @@ typedef enum
     channel_DAC2OUT =  0x3d,
     channel_FVR_Buffer1 =  0x3e,
     channel_FVR_Buffer2 =  0x3f,
-    channel_ANC5 =  0x15
+    channel_Temperature =  0x15
 } adcc_channel_t;
 
 /**

@@ -12,7 +12,7 @@
 */
 
 /*
-© [2023] Microchip Technology Inc. and its subsidiaries.
+© [2022] Microchip Technology Inc. and its subsidiaries.
 
     Subject to your compliance with these terms, you may use Microchip 
     software and any derivatives exclusively with Microchip products. 
@@ -48,14 +48,14 @@ void PIN_MANAGER_Initialize(void)
     TRISx registers
     */
     TRISA = 0x37;
-    TRISB = 0x60;
+    TRISB = 0x70;
     TRISC = 0xFB;
 
     /**
     ANSELx registers
     */
     ANSELA = 0x37;
-    ANSELB = 0x40;
+    ANSELB = 0x50;
     ANSELC = 0xEF;
 
     /**
@@ -93,11 +93,9 @@ void PIN_MANAGER_Initialize(void)
     /**
     PPS registers
     */
-    ADACTPPS = 0x12; //RC2->ADCC:ADACT;
+    CCP1PPS = 0x14; //RC4->CCP1:CCP1;
     RX1PPS = 0xD; //RB5->EUSART1:RX1;
     RB7PPS = 0x13;  //RB7->EUSART1:TX1;
-    CCP1PPS = 0x14;  //RC4->CCP1:CCP1;
-    RC4PPS = 0x09;  //RC4->CCP1:CCP1;
 
    /**
     IOCx registers 
